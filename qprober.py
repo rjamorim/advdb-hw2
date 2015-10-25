@@ -25,8 +25,7 @@ def run_query(query):
     content = response.read()
     # content contains the xml/json response from Bing.
     tree = json.loads(content)
-    # return tree['d']['results']
-    return tree
+    return tree['d']['results'][0]['WebTotal']
 
 result = run_query('oi')
 print result
