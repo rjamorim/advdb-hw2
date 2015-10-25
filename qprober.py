@@ -14,8 +14,7 @@ def run_query(query):
     query = "premiership"
     query_url = urllib2.quote("'site:" + site + " " + query + "'")
     #bing_url = 'https://api.datamarket.azure.com/Data.ashx/Bing/SearchWeb/v1/Composite?Query=' + query_url + '&$top=10&$format=json'
-    bing_url = 'https://api.datamarket.azure.com/Bing/Search/Web?Query=' + query_url + '&$top=10&$format=json'
-    print bing_url
+    bing_url = 'https://api.datamarket.azure.com/Bing/SearchWeb/v1/Composite?Query=' + query_url + '&$top=10&$format=json'
     account_key = 'hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc'
     # account_key = bing
 
@@ -28,9 +27,6 @@ def run_query(query):
     tree = json.loads(content)
     # return tree['d']['results']
     return tree
-
-#https://api.datamarket.azure.com/Data.ashx/Bing/SearchWeb/v1/Composite?Query=%27site%3Afifa.com%20premiership%27&$top=10&$format=json
-#https://api.datamarket.azure.com/Data.ashx/Bing/SearchWeb/v1/Composite?Query=%27site%3afifa.com%20premiership%27&$top=10&$format=Atom
 
 result = run_query('oi')
 print result
