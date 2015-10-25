@@ -1,0 +1,1098 @@
+[19:02:10] rja2139@delhi:~ :) $ /home/gravano/6111/Html/Proj2/bin/run.sh hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc 0.6 100 diabetes.org
+
+
+Classifying...
+Specificity for category:Computers is 0.02316766213731085
+Coverage for category:Computers is 48792
+Specificity for category:Health is 0.9694640032781919
+Coverage for category:Health is 2041729
+Specificity for category:Diseases is 0.4559658761320119
+Coverage for category:Diseases is 716860
+Specificity for category:Fitness is 0.51349812714618
+Coverage for category:Fitness is 807311
+Specificity for category:Sports is 0.007368334584497248
+Coverage for category:Sports is 15518
+
+
+Classification:
+Root/Health
+
+
+Extracting topic content summaries...
+Creating Content Summary for:Health
+1/29
+
+Getting page: http://www.diabetes.org/living-with-diabetes/complications/related-conditions/hivaids-and-diabetes.html
+
+
+Getting page: http://www.diabetes.org/diabetes-basics/myths/
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/OTC-Sleep-aids/td-p/157990
+
+
+Getting page: http://main.diabetes.org/site/Calendar/1543163310?view=Detail&id=24381
+2/29
+
+Getting page: http://www.diabetes.org/are-you-at-risk/lower-your-risk/diabetes-and-cancer.html
+
+
+Getting page: http://www.diabetes.org/newsroom/press-releases/2010/experts-explore-emerging-evidence-linking-diabetes-and-cancer.html
+
+
+Getting page: http://www.diabetes.org/diabetes-basics/symptoms/
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/MIlk-causes-Cancer/td-p/588308/page/2
+3/29
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/oral-health-and-hygiene/
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/What-to-eat-after-dental-surgery/td-p/84067
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Dental-Work-High-blood-sugar/td-p/25419
+
+
+Getting page: http://community.diabetes.org/t5/Eating-Right-with-Diabetes/Liquid-soft-foods-after-dental-work/td-p/366664
+4/29
+
+Getting page: http://www.diabetes.org/
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/
+
+
+Getting page: http://www.diabetes.org/diabetes-basics/type-2/
+5/29
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/blood-glucose-control/hypoglycemia-low-blood.html
+
+
+Getting page: http://professional.diabetes.org/ADMIN/USERFILES/0%20-%20SEAN/DOCUMENTS/JANUARY%20SUPPLEMENT%20COMBINED_FINAL.PDF
+
+
+Getting page: http://community.diabetes.org/t5/The-Watering-Hole/Testing-for-STDs/td-p/599554
+6/29
+
+Getting page: http://professional.diabetes.org/CongressReport_Display.aspx?CID=93401
+
+
+Getting page: http://www.diabetes.org/newsroom/press-releases/2014/are-the-new-acc-aha-guidelines-for-lipids-appropriate-for-people-with-diabetes.html
+
+
+Getting page: http://professional.diabetes.org/CongressReport_Display.aspx?CID=93128
+
+
+Getting page: http://professional.diabetes.org/CongressReport_Display.aspx?CID=91510
+7/29
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Aspirin-for-Prevention-of-Cardiovascular-Disease/td-p/270992
+
+
+Getting page: http://journal.diabetes.org/clinicaldiabetes/v16n21998/Pg75.htm
+
+
+Getting page: http://professional.diabetes.org/Abstracts_Display.aspx?CID=74488
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/complications/heart-disease/
+8/29
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/medication/other-treatments/aspirin.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Should-You-Take-an-Aspirin-a-Day/td-p/481933
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/2014%20CMR%20English/Taking%20Aspirin%20to%20Protect%20Your%20Heart.pdf
+9/29
+
+Getting page: http://www.diabetes.org/are-you-at-risk/lower-your-risk/bloodpressure.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/complications/heart-disease/heart-disease-tests.html
+
+
+Getting page: http://www.diabetes.org/research-and-practice/patient-access-to-research/blood-pressure-treatment-time.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/complications/
+10/29
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/medication/insulin/insulin-basics.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/blood-glucose-control/hyperglycemia.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/get-started-safely/blood-glucose-control-and-exercise.html
+11/29
+
+Getting page: http://www.diabetes.org/are-you-at-risk/lower-your-risk/cholesterol.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Doctor-prescribed-Lipitor-Synthroid/td-p/330780
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/whos-on-your-health-care-team/your-first-visit.html
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/CE/PG/Statins%20in%20The%20Water%20-%20Not%20So%20Fast%20-%20Thompson.pdf
+12/29
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Statins/td-p/443027
+13/29
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Insulin-for-surgery/td-p/202010/page/2
+
+
+Getting page: http://journal.diabetes.org/clinicaldiabetes/v18n12000/Pg17.htm
+14/29
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Does-anyone-know-if-radiation-for-cancer-can-affect-your-blood/td-p/154874
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/men/erectile-dysfunction.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/medication/insulin/insulin-pumps.html
+
+
+Getting page: http://professional.diabetes.org/Content/Posters/2008/p920-P.pdf
+15/29
+
+Getting page: http://www.diabetes.org/living-with-diabetes/recently-diagnosed/where-do-i-begin/aerobic-activity.html
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/CE/Wisconsin/ExerciseDiabetes-Riddell.pdf
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Effects-of-Aerobic-and-Resistance-Training-on-Hemoglobin-A1c/td-p/13763
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Aerobic-vs-Resistance-Exercise/td-p/601224
+16/29
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/making-healthy-food-choices/fats-and-diabetes.html
+
+
+Getting page: http://community.diabetes.org/t5/Eating-Right-with-Diabetes/Fat-free-milk/td-p/222707
+
+
+Getting page: http://community.diabetes.org/t5/Exercise-Fitness/Good-fat-burning-foods/td-p/487298
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Brown-Fat/td-p/561401
+17/29
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/get-and-stay-fit/
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/weight-loss/
+18/29
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/types-of-activity/walking-a-great-place-to-start.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Walking/td-p/88585
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Marathon-Walking/td-p/589462
+
+
+Getting page: http://professional.diabetes.org/content/PML/walking-plan_bf5d7572-5e11-4be9-a49d-cf89186d19cd/walking-plan.pdf
+19/29
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/exercise-and-type-1-diabetes.html
+
+
+Getting page: http://community.diabetes.org/t5/Exercise-Fitness/Preworkout/td-p/528994
+
+
+Getting page: http://community.diabetes.org/t5/Exercise-Fitness/Pre-workout-Supplements/td-p/260022
+
+
+Getting page: http://community.diabetes.org/t5/Exercise-Fitness/Exercise-DVD-s/td-p/121987
+20/29
+
+Getting page: http://www.diabetes.org/research-and-practice/patient-access-to-research/high-uric-acid-levels-raise.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Low-Carb-Diets-and-Gout/td-p/129627
+
+
+Getting page: http://journal.diabetes.org/diabetesspectrum/00v13n3/pg132.htm
+21/29
+
+Getting page: http://community.diabetes.org/t5/Exercise-Fitness/Bodybuilding-and-whey-protein-powders-are-they-safe-for-glucose/td-p/287294
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/meat-and-plant-based-protein.html
+
+
+Getting page: http://www.diabetes.org/mfa-recipes/tips/2012-03/8-healthy-snack-ideas-lean.html
+22/29
+
+Getting page: http://www.diabetes.org/mfa-recipes/recipes/2015-02-walnut-lentil-salad.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/making-healthy-food-choices/meat-and-plant-based-protein.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/making-healthy-food-choices/what-can-i-drink.html
+23/29
+
+Getting page: http://www.diabetes.org/food-and-fitness/weight-loss/food-choices/how-many-calories-do-i-need.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/types-of-activity/ways-to-burn-100-calories.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/carbs-vs-calories/td-p/464417
+
+
+Getting page: http://www.diabetes.org/mfa-recipes/meal-plans/2014-03-mp-make-your-carbs-count.html
+24/29
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/food-tips/eating-out/the-fast-food-challenge.html
+
+
+Getting page: http://tour.diabetes.org/site/PageServer?pagename=TC_homepage
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Exercise-Challenge/td-p/102597/page/360
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Has-anyone-tried-ADVOCARE/td-p/55028/page/3
+25/29
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/making-healthy-food-choices/dairy.html
+
+
+Getting page: http://community.diabetes.org/t5/Eating-Right-with-Diabetes/Milk-and-Dairy/td-p/74711
+
+
+Getting page: http://community.diabetes.org/t5/Eating-Right-with-Diabetes/Powdered-Milk-for-Emergencies/td-p/163120
+26/29
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Is-Eating-a-LOT-of-Protein-Safe/td-p/23476
+
+
+Getting page: http://www.diabetes.org/mfa-recipes/tips/2012-03/what-about-protein.html
+27/29
+
+Getting page: http://www.diabetes.org/are-you-at-risk/lower-your-risk/healthy-eating.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/women/eating-disorders.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/weight-loss/getting-started/emotions-and-eating.html
+28/29
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/physical-activity-is-important.html
+29/29
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/exercise-and-weight-loss/td-p/388934
+
+Creating Content Summary for:Root
+1/95
+
+Getting page: http://www.diabetes.org/living-with-diabetes/complications/related-conditions/hivaids-and-diabetes.html
+
+
+Getting page: http://www.diabetes.org/diabetes-basics/myths/
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/OTC-Sleep-aids/td-p/157990
+
+
+Getting page: http://main.diabetes.org/site/Calendar/1543163310?view=Detail&id=24381
+2/95
+
+Getting page: http://www.diabetes.org/are-you-at-risk/lower-your-risk/diabetes-and-cancer.html
+
+
+Getting page: http://www.diabetes.org/newsroom/press-releases/2010/experts-explore-emerging-evidence-linking-diabetes-and-cancer.html
+
+
+Getting page: http://www.diabetes.org/diabetes-basics/symptoms/
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/MIlk-causes-Cancer/td-p/588308/page/2
+3/95
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/oral-health-and-hygiene/
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/What-to-eat-after-dental-surgery/td-p/84067
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Dental-Work-High-blood-sugar/td-p/25419
+
+
+Getting page: http://community.diabetes.org/t5/Eating-Right-with-Diabetes/Liquid-soft-foods-after-dental-work/td-p/366664
+4/95
+
+Getting page: http://www.diabetes.org/
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/
+
+
+Getting page: http://www.diabetes.org/diabetes-basics/type-2/
+5/95
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/blood-glucose-control/hypoglycemia-low-blood.html
+
+
+Getting page: http://professional.diabetes.org/ADMIN/USERFILES/0%20-%20SEAN/DOCUMENTS/JANUARY%20SUPPLEMENT%20COMBINED_FINAL.PDF
+
+
+Getting page: http://community.diabetes.org/t5/The-Watering-Hole/Testing-for-STDs/td-p/599554
+6/95
+
+Getting page: http://professional.diabetes.org/CongressReport_Display.aspx?CID=93401
+
+
+Getting page: http://www.diabetes.org/newsroom/press-releases/2014/are-the-new-acc-aha-guidelines-for-lipids-appropriate-for-people-with-diabetes.html
+
+
+Getting page: http://professional.diabetes.org/CongressReport_Display.aspx?CID=93128
+
+
+Getting page: http://professional.diabetes.org/CongressReport_Display.aspx?CID=91510
+7/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Aspirin-for-Prevention-of-Cardiovascular-Disease/td-p/270992
+
+
+Getting page: http://journal.diabetes.org/clinicaldiabetes/v16n21998/Pg75.htm
+
+
+Getting page: http://professional.diabetes.org/Abstracts_Display.aspx?CID=74488
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/complications/heart-disease/
+8/95
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/medication/other-treatments/aspirin.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Should-You-Take-an-Aspirin-a-Day/td-p/481933
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/2014%20CMR%20English/Taking%20Aspirin%20to%20Protect%20Your%20Heart.pdf
+9/95
+
+Getting page: http://www.diabetes.org/are-you-at-risk/lower-your-risk/bloodpressure.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/complications/heart-disease/heart-disease-tests.html
+
+
+Getting page: http://www.diabetes.org/research-and-practice/patient-access-to-research/blood-pressure-treatment-time.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/complications/
+10/95
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/medication/insulin/insulin-basics.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/blood-glucose-control/hyperglycemia.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/get-started-safely/blood-glucose-control-and-exercise.html
+11/95
+
+Getting page: http://www.diabetes.org/are-you-at-risk/lower-your-risk/cholesterol.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Doctor-prescribed-Lipitor-Synthroid/td-p/330780
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/whos-on-your-health-care-team/your-first-visit.html
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/CE/PG/Statins%20in%20The%20Water%20-%20Not%20So%20Fast%20-%20Thompson.pdf
+12/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Statins/td-p/443027
+13/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Insulin-for-surgery/td-p/202010/page/2
+
+
+Getting page: http://journal.diabetes.org/clinicaldiabetes/v18n12000/Pg17.htm
+14/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Does-anyone-know-if-radiation-for-cancer-can-affect-your-blood/td-p/154874
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/men/erectile-dysfunction.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/medication/insulin/insulin-pumps.html
+
+
+Getting page: http://professional.diabetes.org/Content/Posters/2008/p920-P.pdf
+15/95
+
+Getting page: http://www.diabetes.org/living-with-diabetes/recently-diagnosed/where-do-i-begin/aerobic-activity.html
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/CE/Wisconsin/ExerciseDiabetes-Riddell.pdf
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Effects-of-Aerobic-and-Resistance-Training-on-Hemoglobin-A1c/td-p/13763
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Aerobic-vs-Resistance-Exercise/td-p/601224
+16/95
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/making-healthy-food-choices/fats-and-diabetes.html
+
+
+Getting page: http://community.diabetes.org/t5/Eating-Right-with-Diabetes/Fat-free-milk/td-p/222707
+
+
+Getting page: http://community.diabetes.org/t5/Exercise-Fitness/Good-fat-burning-foods/td-p/487298
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Brown-Fat/td-p/561401
+17/95
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/get-and-stay-fit/
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/weight-loss/
+18/95
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/types-of-activity/walking-a-great-place-to-start.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Walking/td-p/88585
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Marathon-Walking/td-p/589462
+
+
+Getting page: http://professional.diabetes.org/content/PML/walking-plan_bf5d7572-5e11-4be9-a49d-cf89186d19cd/walking-plan.pdf
+19/95
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/exercise-and-type-1-diabetes.html
+
+
+Getting page: http://community.diabetes.org/t5/Exercise-Fitness/Preworkout/td-p/528994
+
+
+Getting page: http://community.diabetes.org/t5/Exercise-Fitness/Pre-workout-Supplements/td-p/260022
+
+
+Getting page: http://community.diabetes.org/t5/Exercise-Fitness/Exercise-DVD-s/td-p/121987
+20/95
+
+Getting page: http://www.diabetes.org/research-and-practice/patient-access-to-research/high-uric-acid-levels-raise.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Low-Carb-Diets-and-Gout/td-p/129627
+
+
+Getting page: http://journal.diabetes.org/diabetesspectrum/00v13n3/pg132.htm
+21/95
+
+Getting page: http://community.diabetes.org/t5/Exercise-Fitness/Bodybuilding-and-whey-protein-powders-are-they-safe-for-glucose/td-p/287294
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/meat-and-plant-based-protein.html
+
+
+Getting page: http://www.diabetes.org/mfa-recipes/tips/2012-03/8-healthy-snack-ideas-lean.html
+22/95
+
+Getting page: http://www.diabetes.org/mfa-recipes/recipes/2015-02-walnut-lentil-salad.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/making-healthy-food-choices/meat-and-plant-based-protein.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/making-healthy-food-choices/what-can-i-drink.html
+23/95
+
+Getting page: http://www.diabetes.org/food-and-fitness/weight-loss/food-choices/how-many-calories-do-i-need.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/types-of-activity/ways-to-burn-100-calories.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/carbs-vs-calories/td-p/464417
+
+
+Getting page: http://www.diabetes.org/mfa-recipes/meal-plans/2014-03-mp-make-your-carbs-count.html
+24/95
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/food-tips/eating-out/the-fast-food-challenge.html
+
+
+Getting page: http://tour.diabetes.org/site/PageServer?pagename=TC_homepage
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Exercise-Challenge/td-p/102597/page/360
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Has-anyone-tried-ADVOCARE/td-p/55028/page/3
+25/95
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/making-healthy-food-choices/dairy.html
+
+
+Getting page: http://community.diabetes.org/t5/Eating-Right-with-Diabetes/Milk-and-Dairy/td-p/74711
+
+
+Getting page: http://community.diabetes.org/t5/Eating-Right-with-Diabetes/Powdered-Milk-for-Emergencies/td-p/163120
+26/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Is-Eating-a-LOT-of-Protein-Safe/td-p/23476
+
+
+Getting page: http://www.diabetes.org/mfa-recipes/tips/2012-03/what-about-protein.html
+27/95
+
+Getting page: http://www.diabetes.org/are-you-at-risk/lower-your-risk/healthy-eating.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/women/eating-disorders.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/weight-loss/getting-started/emotions-and-eating.html
+28/95
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/physical-activity-is-important.html
+29/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/exercise-and-weight-loss/td-p/388934
+30/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/A-meter-that-requires-no-pricking-of-one-s-fingers-We-might-be/td-p/230741
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Newibe-question/td-p/77374/page/2
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/An-update-on-GrannyRed/td-p/38886/page/2
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Awareness-for-Diabetes/td-p/77948
+31/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Januvia-May-Be-Too-Expensive-Alternatives/td-p/195618
+
+
+Getting page: http://tracker.diabetes.org/explore/2796/
+
+
+Getting page: http://tracker.diabetes.org/explore/2824/
+
+
+Getting page: http://community.diabetes.org/t5/The-Watering-Hole/The-Official-MTV-Thread-Post-Your-Favorite-Music-Videos-Here/td-p/391304/page/18
+32/95
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/file/CE/ADASAP1_Web_3P.pdf
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/2015%20ERP/chronicle-walkthrough.pdf
+
+
+Getting page: http://main.diabetes.org/dorg/PDFs/Advocacy/Safe_at_School/howtouse2008.pdf
+
+
+Getting page: http://main.diabetes.org/dorg/PDFs/schools/statelaws/tn_tna_glucagon-training-module.pdf
+33/95
+
+Getting page: http://professional.diabetes.org/Multimedia_Search.aspx
+
+
+Getting page: http://professional.diabetes.org/Content/Multimedia/pdf/wcjorDiabetesTechnologyinthe21stCentury.pdf
+
+
+Getting page: http://professional.diabetes.org/Content/Multimedia/ppt/ldwnjDiabetic-Neuropathy-Final[1].ppt
+
+
+Getting page: http://professional.diabetes.org/Multimedia_List.aspx
+34/95
+
+Getting page: http://professional.diabetes.org/presentations_details.aspx?speaker=87285
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Fun-with-the-Track-3-diabetes-app/td-p/495232
+
+
+Getting page: http://community.diabetes.org/t5/The-Place-for-Parents/To-all-new-Parents-of-Children-with-D/td-p/190106
+
+
+Getting page: http://community.diabetes.org/t5/The-Place-for-Parents/I-have-been-a-horrible-mother/td-p/220803/page/2
+35/95
+
+Getting page: http://professional.diabetes.org/Abstracts_Display.aspx?CID=79579
+
+
+Getting page: http://main.diabetes.org/site/R?i=mOXy-3jqvb-aBKJWbfY2WQ
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Now-What-s-Going-On/td-p/23980
+
+
+Getting page: http://professional.diabetes.org/Content/Posters/2004/p1538-P.pdf
+37/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Looking-for-a-Windows-Mobile-App-for-Carb-Counting/td-p/98950
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/file/Research%20Applications/Easy%20Steps%20to%20Application%20Submission_4-10.pdf
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Dexcom-Studio-is-incompatable-with-Windows-8/td-p/452905
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/IPod-Touch-8Gb-Apps/td-p/262620
+39/95
+
+Getting page: http://www.diabetes.org/in-my-community/
+
+
+Getting page: http://professional.diabetes.org/Congress_Display.aspx?SID=1016&CID=97875
+
+
+Getting page: http://web.diabetes.org/perspectives/ADAJournalVol37-03.pdf
+
+
+Getting page: http://main.diabetes.org/site/R?i=v0Ey_A6IV6imhmhOrXzcjg
+40/95
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/13%20GuidedAudioPosterTourGuidelines.pdf
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/14GuidedAudioPosterTourGuidelines%2003.06.2014.pdf
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/Abstracts/12%20Guided%20Audio%20Tour%20Presentation%20Guidelines.pdf
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/Abstracts/12%20Oral%20Presentation%20Guidelines.pdf
+42/95
+
+Getting page: http://www.diabetes.org/in-my-community/diabetes-expos/denver/speaker-bios.html
+
+
+Getting page: http://community.diabetes.org/t5/Discuss-Diabetes-News/Bahamian-Diabetics-Seeing-Great-Results-with-Bioslife-SlimG/td-p/173376
+
+
+Getting page: http://web.diabetes.org/Advocacy/legalmaterials/F4F/Facultybios.pdf
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Unable-to-Stay-On-Track/td-p/389540
+43/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Alan-hello-help/td-p/300218/page/2
+46/95
+
+Getting page: http://www.diabetes.org/living-with-diabetes/know-your-rights/discrimination/drivers-licenses/
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/know-your-rights/discrimination/drivers-licenses/commercial-drivers-and-diabetes-discrimination/faqs-about-commercial-drivers-licenses.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/know-your-rights/discrimination/drivers-licenses/driver-license-laws-by-state-display.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Trucking-amp-Diabetes/td-p/158504
+47/95
+
+Getting page: http://community.diabetes.org/t5/The-Road-to-Riding-as-a-Champion/Fundraising-Business-Cards/td-p/277938
+
+
+Getting page: http://journal.diabetes.org/diabetesspectrum/00v13n3/pg149d.htm
+
+
+Getting page: http://www.diabetes.org/in-my-community/american-diabetes-month.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/research-you-can-help-with-if-you-have-a-computer/td-p/64752
+48/95
+
+Getting page: http://community.diabetes.org/t5/The-Watering-Hole/do-you-play-the-d-card/td-p/383652/page/3
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/T1-starting-to-get-neuropathy/td-p/502192
+
+
+Getting page: http://journal.diabetes.org/clinicaldiabetes/v16n41998/Adelman.htm
+49/95
+
+Getting page: http://community.diabetes.org/t5/Diabetes-Technology-Equipment/Meter-software-and-Windows-7/td-p/18593
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Getting-An-Upgrade/td-p/384186/page/3
+50/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Diabetes-and-acupuncture/td-p/67646
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/frozen-shoulder/td-p/14809/page/2
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Frozen-shoulder-dupuytrens-contracture/td-p/294734
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Chinese-Traditional-Medicine-CTM-for-Diabetes/td-p/362400
+52/95
+
+Getting page: http://community.diabetes.org/t5/Exercise-Fitness/Leslie-Sandstone-s-Walk-Aerobics/td-p/391930
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/CE/PG/Colberg%20ADA%20Adv%20Postgrad%20Prescribing%20Exercise%202014.pdf
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/BG-and-Exercise/td-p/575219
+56/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/re-cholesterol-test-results/td-p/452887
+58/95
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/planning-meals/diabetes-meal-plans-and-a-healthy-diet.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/planning-meals/gluten-free-diets/
+61/95
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/medication/insulin/insulin-routines.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/medication/insulin/
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/medication/insulin/what-about-insulin.html
+62/95
+
+Getting page: http://journal.diabetes.org/diabetesspectrum/99v12n2/pg113.htm
+
+
+Getting page: http://community.diabetes.org/t5/The-Place-for-Parents/school-nurse/td-p/274232
+
+
+Getting page: http://main.diabetes.org/dorg/PDFs/schools/statelaws/md_delegationnursfunctions.pdf
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/parents-and-kids/diabetes-care-at-school/school-staff-trainings/
+63/95
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/types-of-activity/what-we-recommend.html
+
+
+Getting page: http://community.diabetes.org/t5/Recently-Diagnosed-New-Members/What-daily-range-is-normal-for-a-diabetic/td-p/302896
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Question-about-people-without-diabetes/td-p/511348
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Exercise-Challenge/td-p/102597/page/308
+64/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Treadmill-exercise/td-p/587416
+
+
+Getting page: http://community.diabetes.org/t5/Recently-Diagnosed-New-Members/Treadmill-vs-elliptical/td-p/406551
+
+
+Getting page: http://community.diabetes.org/t5/Exercise-Fitness/Treadmill-walkers/td-p/15156
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Treadmill-question/td-p/497726
+65/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Calling-All-Manassas-Walkers/td-p/592226
+
+
+Getting page: http://main.diabetes.org/site/PageServer?pagename=CW_homepage&s_src=vanity&s_subsrc=communitywalk
+66/95
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/food-tips/taking-a-closer-look-at-labels.html
+67/95
+
+Getting page: http://www.diabetes.org/mfa-recipes/tips/2014-03/make-your-carbs-count.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/understanding-carbohydrates/
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/understanding-carbohydrates/carbohydrate-counting.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/understanding-carbohydrates/make-your-carbs-count.html
+68/95
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/whos-on-your-health-care-team/your-health-care-team.html
+
+
+Getting page: http://www.diabetes.org/food-and-fitness/fitness/get-started-safely/see-your-doctor.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/whos-on-your-health-care-team/
+69/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Good-Diabetes-Doctor-in-Tulsa/td-p/61760
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/health-insurance/medicare.html
+71/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Muscle-fat-and-insulin-resistance/td-p/135987
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/How-do-I-tell-the-difference-between-fat-amp-muscle-when-I-am/td-p/2461
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Low-carb-amp-losing-muscle/td-p/602508/page/3
+
+
+Getting page: http://professional.diabetes.org/Abstracts_Display.aspx?CID=71051
+72/95
+
+Getting page: http://www.diabetes.org/living-with-diabetes/health-insurance/
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/recently-diagnosed/where-do-i-begin/medicines.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/health-insurance/health-insurance-marketplace.html
+73/95
+
+Getting page: http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/making-healthy-food-choices/
+
+
+Getting page: http://www.professional.diabetes.org/admin/UserFiles/0%20-%20Sean/dc132042%20FINAL.pdf?s_src=vanity&s_subsrc=nutritionguidelines
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/health-insurance/health_insurance-update.html
+
+
+Getting page: http://www.diabetes.org/mfa-recipes/about-us.html
+74/95
+
+Getting page: http://www.diabetes.org/research-and-practice/patient-access-to-research/diabetes-education-cuts.html
+
+
+Getting page: http://journal.diabetes.org/diabetesspectrum/00v13n3/pg149f.htm
+
+
+Getting page: http://main.diabetes.org/site/Calendar/33226353?view=Detail&id=18203
+75/95
+
+Getting page: http://www.diabetes.org/newsroom/press-releases/2009/hypoglycemia-increases-2009.html
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/CE/South%20Florida/Inpatient%20Diabetes%20Management.pdf
+
+
+Getting page: http://main.diabetes.org/site/PageServer?pagename=calendar_new&day=25&year=2015&month=10&period=month&mode=list
+76/95
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/CE/South%20Florida/Workshhop%20D-3%20Team%20Approach%20to%20Diabetes.pdf
+
+
+Getting page: http://professional.diabetes.org/admin/UserFiles/0%20-%20Sean/Documents/January%20Supplement%20Combined_Final.pdf
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/parents-and-kids/diabetes-care-at-school/written-care-plans/diabetes-medical-management.html
+77/95
+
+Getting page: http://www.diabetes.org/in-my-community/diabetes-camp/medical-care.html
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/treatment-and-care/
+
+
+Getting page: http://www.diabetes.org/advocacy/news-events/cost-of-diabetes.html
+78/95
+
+Getting page: http://journal.diabetes.org/clinicaldiabetes/v18n12000/Pg38.htm
+79/95
+
+Getting page: http://professional.diabetes.org/Presentations_Details.aspx?speaker=569351
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/a-shout-out-to-all-old-timers-this-is-lakerboy/td-p/97482
+
+
+Getting page: http://stepout.diabetes.org/site/DocServer/walk_map.pdf?docID=33321
+
+
+Getting page: http://journal.diabetes.org/diabetescare/FullText/Supplements/DiabetesCare/Supplement399/C6.htm
+80/95
+
+Getting page: http://community.diabetes.org/t5/The-Place-for-Parents/College-Athletics-Discrimination/td-p/135889
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Famous-Type-1-s-Athletes-Musicians-Everyday-Heroes-etc/td-p/237196
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Off-Topic-quot-The-Hammer-quot-an-inspirational-movie/td-p/131355
+
+
+Getting page: http://www.diabetes.org/living-with-diabetes/we-can-help/stories/paige-and-clares-story.html
+81/95
+
+Getting page: http://main.diabetes.org/site/Calendar/1680347988?view=Detail&id=26661
+
+
+Getting page: http://main.diabetes.org/site/Calendar/324234870?view=Detail&id=10141
+
+
+Getting page: http://main.diabetes.org/site/DocServer/Microsoft_Word_-_Kiss_A_Pig_Contest_Tickets.pdf?docID=46081
+
+
+Getting page: http://main.diabetes.org/site/PageServer?pagename=calendar_new&day=1&year=2010&month=3&period=month&mode=grid
+82/95
+
+Getting page: http://community.diabetes.org/t5/Recently-Diagnosed-New-Members/College-Athletics-Discrimination/td-p/135899
+
+
+Getting page: http://www.diabetes.org/in-my-community/diabetes-camp/
+
+
+Getting page: http://www.diabetes.org/in-my-community/diabetes-camp/camps/needlepoint-2.html
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Famous-Type-1-s-Athletes-Musicians-Everyday-Heroes-etc/td-p/237196/page/2
+83/95
+
+Getting page: http://community.diabetes.org/t5/Talk-the-Walk/Team-Names/td-p/178954
+
+
+Getting page: http://journal.diabetes.org/diabetesspectrum/98v11n1/pg33.htm
+
+
+Getting page: http://tour.diabetes.org/site/PageServer?pagename=TC_start_national_team
+84/95
+
+Getting page: http://www.diabetes.org/newsroom/press-releases/2012/2012-dribble-to-stop-diabetes-campaign.html
+
+
+Getting page: http://main.diabetes.org/site/Calendar/147454862?view=Detail&id=35622
+
+
+Getting page: http://main.diabetes.org/site/Calendar/350826393?view=Detail&id=25821
+
+
+Getting page: http://main.diabetes.org/site/Calendar/953145226?view=Detail&id=26233
+85/95
+
+Getting page: http://main.diabetes.org/site/Calendar/1353845464?view=Detail&id=35101
+
+
+Getting page: http://main.diabetes.org/site/Calendar/1977119454?view=Detail&id=25821
+
+
+Getting page: http://main.diabetes.org/site/Calendar/614677646?view=Detail&id=35101
+86/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Walking-to-Morris-s-house/td-p/58171/page/5
+87/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Why-is-the-military-allowed-to-discriminate-against-allowing/td-p/267958/page/6
+
+
+Getting page: http://main.diabetes.org/dorg/PDFs/expo-2015-minneapolis-program.pdf
+
+
+Getting page: http://main.diabetes.org/site/R?i=hqckheelNBa-pqMu2W5aYw
+88/95
+
+Getting page: http://community.diabetes.org/t5/The-Place-for-Parents/My-daughter-was-diagnosed-type-1-on-3-06-2010/td-p/78576
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/Near-No-Hitter-for-Type-1/td-p/88958
+
+
+Getting page: http://community.diabetes.org/t5/The-Watering-Hole/Taste-buds-and-other-ramblings/td-p/374436/page/4
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/A-Type-1-Athlete/td-p/237626
+89/95
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/First-Ever-Inhaled-Insulin-Device-Approved/td-p/529468
+
+
+Getting page: http://community.diabetes.org/t5/Recently-Diagnosed-New-Members/Question-about-meds/td-p/519234
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/As-summer-winds-down/td-p/555403
+90/95
+
+Getting page: http://community.diabetes.org/t5/Recently-Diagnosed-New-Members/Football/td-p/66324
+
+
+Getting page: http://community.diabetes.org/t5/Teens-Young-Adults/Playing-sports-with-a-pump/td-p/164400
+
+
+Getting page: http://www.diabetes.org/mfa-recipes/recipes/stuffed-italian-meatloaf.html
+91/95
+
+Getting page: http://main.diabetes.org/site/Calendar/1352339612?view=Detail&id=7361
+
+
+Getting page: http://main.diabetes.org/site/Calendar/759456565?view=Detail&id=7361
+92/95
+
+Getting page: http://main.diabetes.org/site/Calendar?id=34201&view=Detail&s_src=vanity&s_subsrc=lexingtongala
+
+
+Getting page: http://schoolwalk.diabetes.org/site/DocServer/PPK_Entry_Form__1_.pdf?docID=179461
+
+
+Getting page: http://community.diabetes.org/t5/The-Watering-Hole/Any-auto-racing-fans/td-p/311060/page/59
+93/95
+
+Getting page: http://www.diabetes.org/in-my-community/local-offices/rochester-new-york/community-leadership-board.html
+
+
+Getting page: http://community.diabetes.org/t5/The-Place-for-Parents/Scared-parent/td-p/267690
+
+
+Getting page: http://main.diabetes.org/site/News2?cmd=listallarticles
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/O-T-2-Hours-and-Counting/td-p/291642/page/2
+94/95
+
+Getting page: http://www.diabetes.org/mfa-recipes/tips/2012-09/stay-healthy-this-tailgating.html
+
+
+Getting page: http://community.diabetes.org/t5/The-Watering-Hole/Any-auto-racing-fans/td-p/311060/page/13
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-2/What-Are-Your-Non-diabetic-Interests/td-p/62575/page/3
+95/95
+
+Getting page: http://community.diabetes.org/t5/The-Place-for-Parents/diabetes-football-and-omnipod/td-p/376908
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Tackling-Bad-Coaching-in-Youth-Football-League/td-p/97317
+
+
+Getting page: http://community.diabetes.org/t5/Adults-Living-with-Type-1/Tackling-Bad-Coaching-in-Youth-Football-League/td-p/97317/page/2
