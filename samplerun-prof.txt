@@ -1,0 +1,1038 @@
+[19:02:10] rja2139@delhi:~ :) $ /home/gravano/6111/Html/Proj2/bin/run.sh hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc 0.6 100 fifa.com
+
+
+Classifying...
+Specificity for category:Computers is 0.07994749352640251
+Coverage for category:Computers is 334185
+Specificity for category:Health is 0.024622158172043627
+Coverage for category:Health is 102922
+Specificity for category:Sports is 0.8954303483015539
+Coverage for category:Sports is 3742949
+Specificity for category:Basketball is 0.04225667003805329
+Coverage for category:Basketball is 55142
+Specificity for category:Soccer is 0.8531736782635005
+Coverage for category:Soccer is 1113332
+
+
+Classification:
+Root/Sports/Soccer
+
+
+Extracting topic content summaries...
+Creating Content Summary for:Root
+1/90
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=7/news=estrategias-para-los-doce-pasos-2401168-2401321.html
+
+
+Getting page: http://www.fifa.com/worldcup/groups/group=255947/index.html
+
+
+Getting page: http://www.fifa.com/clubworldcup/index.html
+
+
+Getting page: http://www.fifa.com/u17worldcup/index.html
+2/90
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=sri-lanka-java-lane-2000000769/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=sri-lanka-java-lane-2000000769/matches/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=sri-lanka-champions-league-2000000156/matches/match=negombo-youth-java-lane-300337074/index.html
+
+
+Getting page: http://www.fifa.com/about-fifa/who-we-are/the-laws/1980-1990.html
+3/90
+
+Getting page: http://store.fifa.com/?intcmp=fifacom_hp_module_fifastore
+
+
+Getting page: http://store.fifa.com/70975.html?intcmp=fifacom_hp_module_fifastore
+
+
+Getting page: http://en.predictor.fifa.com/?intcmp=fifacom_hp_module_games
+
+
+Getting page: http://www.fifa.com/fifa-world-ranking/ranking-table/men/index.html
+4/90
+
+Getting page: http://www.fifa.com/mm/document/tournament/competition/02/40/14/46/tv%5fnumbers%5fen%5fneutral.pdf
+
+
+Getting page: http://www.fifa.com/about-fifa/news/y=2015/m=5/news=fifa-world-football-museum-opens-showroom-2602979.html
+
+
+Getting page: http://de.fifa.com/worldcup/news/y=2015/m=7/news=multimedia-als-deutschland-im-maracana-den-vierten-stern-holte-2663720.html
+
+
+Getting page: http://www.fifa.com/media/news/y=2000/m=4/news=the-media-and-new-technology-72643.html
+5/90
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=germany-bundesliga-2000000019/matches/match=hamburger-sv-vfb-stuttgart-300322322/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=germany-bundesliga-2000000019/matches/match=vfl-wolfsburg-hertha-bsc-300322348/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=germany-bundesliga-2000000019/matches/match=hertha-bsc-borussia-dortmund-300283726/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=germany-bundesliga-2000000019/matches/match=fsv-mainz-05-borussia-dortmund-300283623/index.html
+6/90
+
+Getting page: http://www.fifa.com/worldcup/index.html
+
+
+Getting page: http://www.fifa.com/index.html
+
+
+Getting page: http://www.fifa.com/u20worldcup/index.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/index.html
+8/90
+
+Getting page: http://www.fifa.com/mobile/index.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2013/m=1/news=seventy-cts-options-already-approved-for-brazil-2014-1999121.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=6/news=official-2014-fifa-world-cup-app-available-to-download-for-free-2368246.html
+
+
+Getting page: http://www.fifa.com/mm/Document/AF-Magazine/FIFAWeekly/02/72/08/83/42_EN_Weekly_Lowres_42_EN_Neutral.PDF
+10/90
+
+Getting page: http://www.fifa.com/womensworldcup/destination/cities/city=18908/index.html
+
+
+Getting page: http://resources.fifa.com/mm/document/fifaworldcup/generic/02/11/19/13/footballforhopeforumprogrammeen_neutral.pdf
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=1/news=world-cup-wildcards-out-catch-the-eye-2266096.html
+
+
+Getting page: http://www.fifa.com/about-fifa/news/y=2008/m=5/news=fifa-congress-opens-sydney-782279.html
+11/90
+
+Getting page: http://www.fifa.com/worldcup/photos/galleries/y=2014/m=3/gallery=audio-descriptive-commentary-training-programme-rio-janeiro-2300258.html
+
+
+Getting page: http://www.fifa.com/aboutfifa/photo/rss.xml
+
+
+Getting page: http://www.fifa.com/mm/document/tournament/competition/football%5fstadiums%5ftechnical%5frecommendations%5fand%5frequirements%5fen%5f8211.pdf
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2013/m=10/news=belkalem-brazil-within-touching-distance-2193733.html
+13/90
+
+Getting page: http://www.fifa.com/worldcup/teams/team=43921/_index_default.html
+
+
+Getting page: http://www.fifa.com/womensworldcup/teams/index.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2008/m=10/news=list-referees-preselected-for-south-africa-2010-924086.html
+
+
+Getting page: http://www.fifa.com/worldcup/teams/team=43949/_index_default.html
+14/90
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=6/news=close-to-180-000-tickets-for-the-2014-fifa-world-cup-will-be-up-for-sa-2353399.html
+17/90
+
+Getting page: http://www.fifa.com/worldcup/photos/all-photos.html
+
+
+Getting page: http://www.fifa.com/womensworldcup/matches/round=268020/match=300269500/index.html
+
+
+Getting page: http://www.fifa.com/fifa-tournaments/players-coaches/people=229884/index.html
+
+
+Getting page: http://www.fifa.com/u20worldcup/matches/round=271602/match=300269563/index.html
+18/90
+
+Getting page: http://www.fifa.com/mm/document/footballdevelopment/refereeing/81/42/36/lawsofthegame_2012_e.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/refereeing/law%5f5%5fthe%5freferee%5fen%5f47411.pdf
+
+
+Getting page: http://www.fifa.com/womensworldcup/players/player=387275/comments.html
+
+
+Getting page: http://www.fifa.com/tournaments/archive/u20womensworldcup/japan2012/statistics/players/topcards.html
+19/90
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=4/news=fifa-com-launches-panini-2014-fifa-world-cup-braziltm-online-sticker-a-2319183.html
+
+
+Getting page: http://store.fifa.com/
+
+
+Getting page: http://www.fifa.com/legal/privacy-policy.html
+
+
+Getting page: http://hotels.fifa.com/TermsPolicy.aspx
+20/90
+
+Getting page: http://www.fifa.com/widgets/index.html
+21/90
+
+Getting page: http://www.fifa.com/development/news/y=2013/m=7/news=unifesp-unveiled-fifa-medical-centre-excellence-2131122.html
+22/90
+
+Getting page: http://www.fifa.com/development/news/y=2008/m=4/news=the-importance-good-warm-748722.html
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/4.4.3.%20vitamins%20p%2016-17%5f1491.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/6.11.1.%20what%20you%20need%20to%20know%20about%20asthma%20treatment,kgr%5f1513.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/4.%209.5.%20young%20player%20p%2034-35%5f1501.pdf
+23/90
+
+Getting page: http://www.fifa.com/world-match-centre/news/newsid/144/565/3/index.html
+24/90
+
+Getting page: http://www.fifa.com/fifa-world-ranking/news/y=2014/m=11/news=tchanile-entrustment-aids-togolese-ascent-2471312.html
+
+
+Getting page: http://www.fifa.com/sustainability/news/y=2014/m=5/news=adidas-takes-its-exchange-programme-to-brazil-2336597.html
+
+
+Getting page: http://www.fifa.com/sustainability/news/y=2014/m=3/news=fifa-aids-philippines-football-renewal-2292654.html
+
+
+Getting page: http://www.fifa.com/sustainability/news/y=2011/m=12/news=aids-concern-for-fifa-1550443.html
+25/90
+
+Getting page: http://www.fifa.com/world-match-centre/news/newsid/108/083/2/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=england-premier-league-2000000000/news/newsid/232/091/8/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=england-premier-league-2000000000/news/newsid/167/455/4/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/news/newsid/100/385/9/index.html
+26/90
+
+Getting page: http://www.fifa.com/development/news/y=2015/m=2/news=amssm-and-fifa-hold-second-summit-on-ecg-interpretation-in-athletes-2532191.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2015/m=1/news=fc-barcelona-2512710.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2014/m=3/news=fifa-and-saarland-university-team-2294124.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2014/m=12/news=olympic-park-sports-medicine-centre-australia-2494428.html
+27/90
+
+Getting page: http://www.fifa.com/development/medical/football-for-health/11-for-health/index.html
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/6.10.2.%20anabolic-androgenic%20steroids%20-%20muscle%20and%20man%5f1509.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/1.%5ffootball%5ffor%5fhealth%5fenglish%5f1613.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/01/07/26/86/fifapcmaform.pdf
+28/90
+
+Getting page: http://www.fifa.com/development/news/y=2015/m=8/news=fifa-11-for-health-launched-in-puerto-rico-2671712.html
+
+
+Getting page: http://www.fifa.com/development/medical/football-for-health/11-for-health/mauritius.html
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/6.11.2.%20cortisone%20in%20football%20-blessing%20or%20curse,kgr%5f1514.pdf
+29/90
+
+Getting page: http://www.fifa.com/mm/document/footballdevelopment/medical/51/55/15/nutritionbooklet_neue2010.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/4.4.1.%20carbohydrates%20p12-13%5f1489.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/nutrition_booklet_e_1830.pdf
+
+
+Getting page: http://www.fifa.com/development/medical/index.html
+30/90
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=6/news=postiga-provides-ronaldo-fitness-update-2378705.html
+
+
+Getting page: http://www.fifa.com/mm/document/footballdevelopment/medical/01/45/25/72/femalfootballplayerbooklet_en_web.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/women/9%5fhealth%5ffitness%5fof%5fthe%5ffemale%5ffootball%5fplayer%5f55025.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/affederation/administration/01/67/83/26/circularno.1317-2013fifalistofinternationalreferees.pdf
+31/90
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=2/news=fifa-loc-and-brazilian-government-discuss-positive-legacy-brazil-2014-fo-2279130.html
+
+
+Getting page: http://www.fifa.com/sustainability/news/y=2004/m=12/news=fifa-and-who-join-forces-promote-human-rights-approach-hiv-aids-95638.html
+
+
+Getting page: http://www.fifa.com/sustainability/news/y=2003/m=5/news=fifa-finance-far-reaching-hiv-aids-prevention-campaign-swaziland-87330.html
+32/90
+
+Getting page: http://de.fifa.com/development/news/y=2007/m=5/news=glossar-und-abkurzungen-528561.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2007/m=5/news=glossary-and-abbreviations-514058.html
+33/90
+
+Getting page: http://www.fifa.com/fifa-tournaments/players-coaches/people=347667/index.html
+
+
+Getting page: http://www.fifa.com/fifa-tournaments/players-coaches/people=214151/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/goldcup/matches/match=panama-mexico-300324573/index.html
+
+
+Getting page: http://www.fifa.com/worldcup/matches/round=274831/match=300310115/index.html
+34/90
+
+Getting page: http://www.fifa.com/u20worldcup/teams/team=1889417/photo/213/081/7/picture.html
+
+
+Getting page: http://www.fifa.com/u20worldcup/teams/team=1889505/photo/213/081/7/picture.html
+
+
+Getting page: http://fr.fifa.com/u20worldcup/teams/team=1889417/photo/213/081/7/picture.html
+
+
+Getting page: http://es.fifa.com/u20worldcup/teams/team=1889417/photo/213/081/7/picture.html
+35/90
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=1/news=injured-khedira-world-cup-fitness-battle-2262905.html
+
+
+Getting page: http://www.fifa.com/aboutfifa/organisation/administration/news/rss.xml
+
+
+Getting page: http://www.fifa.com/governance/news/y=2012/m=7/news=transfer-treadmill-slowing-down-1666516.html
+
+
+Getting page: http://www.fifa.com/governance/library/edition2014/news,page=7.htmx
+36/90
+
+Getting page: http://www.fifa.com/fifa-tournaments/players-coaches/people=356750/index.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=5/news=-2337837-2337932.html
+
+
+Getting page: http://www.fifa.com/mm/document/tournament/destination/fiwc2008_uk_38854.pdf
+
+
+Getting page: http://www.fifa.com/womensworldcup/destination/cities/city=3634/index.html
+37/90
+
+Getting page: http://www.fifa.com/development/news/y=2013/m=12/news=dvorak-are-building-better-future-2239680.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2007/m=5/news=energy-demands-and-body-fat-513923.html
+39/90
+
+Getting page: http://www.fifa.com/development/news/y=2015/m=8/news=dvorak-the-team-doctor-s-decision-must-be-respected-2670852.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2015/m=5/news=third-medical-conference-focuses-on-prevention-2608795.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2015/m=9/news=fifa-s-medical-committee-to-continue-work-on-improving-team-relationsh-2676981.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2014/m=1/news=jiri-dvorak-and-mario-bizzini-attend-ioc-conference-2267483.html
+40/90
+
+Getting page: http://www.fifa.com/development/news/y=2004/m=5/news=doctor-madero-double-celebration-92680.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2001/m=5/news=doctor-budapest-and-legend-canada-77527.html
+41/90
+
+Getting page: http://www.fifa.com/news/y=2013/m=12/news=2013-quotes-2250547.html
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/4.9.4.%20female%20player%20p%2032-33%5f1499.pdf
+42/90
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/4.5%20supplements%20p%2022-24%5f1492.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/4.3.%20energydemands%20p%208-11%5f1488.pdf
+43/90
+
+Getting page: http://www.fifa.com/development/news/y=2015/m=1/news=football-medicine-strategies-for-player-care-2504410.html
+
+
+Getting page: http://www.fifa.com/development/medical/about-us/who-we-are.html
+44/90
+
+Getting page: http://www.fifa.com/development/medical/players-health/food-for-football/preparation-for-completion.html
+
+
+Getting page: http://www.fifa.com/development/medical/players-health/food-for-football/supplements.html
+45/90
+
+Getting page: http://www.fifa.com/development/news/y=2014/m=5/news=hospital-for-special-surgery-designated-fifa-medical-center-of-excelle-2341420.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2015/m=4/news=carolina-medical-center-distinguished-by-fifa-2591380.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2015/m=2/news=hat-trick-of-centres-inaugurated-2520147.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2010/m=11/news=adidas-sports-medicine-centre-auckland-697342.html
+46/90
+
+Getting page: http://www.fifa.com/u20worldcup/news/y=2015/m=6/news=ghana-raise-smiles-on-children-s-hospital-visit-2646234.html
+
+
+Getting page: http://www.fifa.com/development/news/y=2014/m=12/news=about-rehasport-clinic-poland-2490401.html
+
+
+Getting page: http://www.fifa.com/about-fifa/news/y=2014/m=10/news=ein-neues-spiel-fur-fuleco-2451919-2452177.html
+
+
+Getting page: http://www.fifa.com/tournaments/archive/u17womensworldcup/costarica2014/news/newsid=2231579/index.html
+47/90
+
+Getting page: http://www.fifa.com/development/news/y=2014/m=12/news=carolina-medical-center-poland-2490405.html
+
+
+Getting page: http://www.fifa.com/womens-football/news/y=2015/m=5/news=alexandersson-we-have-to-be-patient-and-ambitious-2607298.html
+48/90
+
+Getting page: http://resources.fifa.com/mm/document/tournament/competition/02/27/87/85/background_medicalservices2014fwc_eng_neutral.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/6.12.%20a%20vision%20-%20occupational%20medicine%20in%20football%5f1530.pdf
+
+
+Getting page: http://www.fifa.com/development/news/y=2015/m=4/news=polish-clinic-granted-fifa-accolade-2590878.html
+49/90
+
+Getting page: http://www.fifa.com/development/news/y=2015/m=1/news=the-fortius-clinic-london-2497696.html
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/medical/dopingbroschure2_e_55959.pdf
+
+
+Getting page: http://www.fifa.com/development/news/y=1996/m=6/news=the-crucial-ligament-problem-71609.html
+50/90
+
+Getting page: http://www.fifa.com/u20worldcup/photos/galleries/y=2011/m=8/gallery=the-tunnels-and-locker-rooms-1490441.html
+
+
+Getting page: http://es.fifa.com/world-match-centre/news/newsid/132/474/0/index.html
+51/90
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=7/news=referees-for-the-final-four-matches-announced-2401256.html
+
+
+Getting page: http://www.fifa.com/mm/document/footballdevelopment/refereeing/81/42/36/log2013en_neutral.pdf
+
+
+Getting page: http://www.fifa.com/womensworldcup/news/y=2014/m=12/news=follow-the-final-draw-live-2488401.html
+52/90
+
+Getting page: http://www.fifa.com/ballon-dor/photos/galleries/y=2012/m=11/gallery=nba-players-talk-about-fifa-ballon-1928928.html
+
+
+Getting page: http://www.fifa.com/worldcup/photos/galleries/y=2012/m=6/gallery=leandrinho-barbosa-brazilian-basketball-star-1654665.html
+
+
+Getting page: http://es.fifa.com/news/y=2015/m=3/news=promesas-propuestas-y-un-tipo-flexible-2580381.html
+
+
+Getting page: http://es.fifa.com/ballon-dor/photos/galleries/y=2012/m=11/gallery=nba-futbol-1928929.html
+53/90
+
+Getting page: http://www.fifa.com/
+
+
+Getting page: http://www.fifa.com/mensolympic/index.html
+
+
+Getting page: http://www.fifa.com/womensworldcup/index.html
+54/90
+
+Getting page: http://www.fifa.com/worldcup/teams/index.html
+
+
+Getting page: http://www.fifa.com/confederationscup/teams/index.html
+
+
+Getting page: http://www.fifa.com/futsalworldcup/teams/index.html
+55/90
+
+Getting page: http://www.fifa.com/womensworldcup/news/y=2013/m=3/news=fifa-women-world-cup-canada-2015tm-match-schedule-unveiled-2035770.html
+
+
+Getting page: http://www.fifa.com/womens-football/news/y=2001/m=10/news=wusa-big-success-despite-small-audiences-79755.html
+56/90
+
+Getting page: http://www.fifa.com/ballon-dor/news/y=2015/m=1/news=nowitzki-neuer-was-magnificent-in-brazil-2504304.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=6/news=kobe-bryant-football-is-my-favourite-sport-2374985.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=6/news=select-your-dream-team-for-brazil-now-2386164.html
+57/90
+
+Getting page: http://www.fifa.com/worldcup/teams/team=43911/_index_default.html
+
+
+Getting page: http://www.fifa.com/mm/document/footballdevelopment/footballturf/01/62/80/23/playingsurfacetechnicalanalysis3.pdf
+
+
+Getting page: http://www.fifa.com/fifa-tournaments/statistics-and-records/index.html
+58/90
+
+Getting page: http://www.fifa.com/mm/document/tournament/competition/02/44/29/89/fifaworldcupinnumbers%5f120714%5fv7%5feng%5fneutral.pdf
+
+
+Getting page: http://www.fifa.com/fifa-tournaments/statistics-and-records/worldcup/index.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=6/news=07-06-the-squads-in-numbers-2355640.html
+59/90
+
+Getting page: http://search.store.fifa.com/soccer/Official-Ball
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=sudan-sudani-football-champions-league-2000000143/standings/index.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=5/news=adidas-brazuca-final-rio-unveiled-2345973.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=brazil-serie-a-2000000078/standings/index.html
+60/90
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/refereeing/law%5f9%5fthe%5fball%5fin%5fand%5fout%5fplay%5fen%5f47392.pdf
+
+
+Getting page: http://www.fifa.com/development/education-and-technical/referees/laws-of-the-game.html
+61/90
+
+Getting page: http://www.fifa.com/associations/association=bra/index.html
+
+
+Getting page: http://www.fifa.com/associations/association=eth/index.html
+
+
+Getting page: http://www.fifa.com/worldcup/teams/team=43922/_index_default.html
+62/90
+
+Getting page: http://store.fifa.com/departments-2014-fifa-world-cup-brazil--men-men-s-jackets.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2015/m=4/news=chen-chinese-taipei-should-focus-on-development-2583842.html
+
+
+Getting page: http://www.fifa.com/media/rss.xml
+
+
+Getting page: http://www.fifa.com/confederationscup/news/y=2003/m=6/news=chuck-blazer-final-tribute-marc-vivien-foe-87951.html
+63/90
+
+Getting page: http://www.fifa.com/womensworldcup/teams/team=1882884/index.html
+
+
+Getting page: http://www.fifa.com/u20worldcup/teams/index.html
+
+
+Getting page: http://www.fifa.com/u17womensworldcup/index.html
+64/90
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=thailand-thailand-league-2000000094/standings/index.html
+
+
+Getting page: http://www.fifa.com/clubworldcup/clubs/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=france-ligue-1-2000000018/standings/index.html
+65/90
+
+Getting page: http://www.fifa.com/world-match-centre/photos/galleries/gallery/114/694/6/index.html
+
+
+Getting page: http://www.fifa.com/worldcup/teams/team=43817/photos/index.html
+
+
+Getting page: http://www.fifa.com/womensworldcup/news/y=2015/m=5/news=vancouver-to-host-fifa-fan-experience-2608491.html
+
+
+Getting page: http://www.fifa.com/womensworldcup/news/y=2015/m=5/news=fans-invited-to-celebrate-fifa-women-s-world-cup-canada-2015-at-dedica-2607096.html
+66/90
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=russia-russian-football-premier-league-2000000024/news/newsid/233/993/2/index.html
+
+
+Getting page: http://www.fifa.com/womens-football/news/y=2015/m=10/news=international-flavour-boosts-w-league-2712803.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=england-premier-league-2000000000/news/newsid/233/695/5/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/matches/calendar.html
+67/90
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/standings/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/index.html
+
+
+Getting page: http://www.fifa.com/associations/uefa/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/news/index.html
+68/90
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=england-leeds-33744/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=england-leeds-33744/matches/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=england-leeds-33744/news/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=england-leeds-united-2000006865/matches/index.html
+69/90
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=germany-bayern-munchen-1914810/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/photos/galleries/gallery/232/592/1/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=germany-bayern-munchen-1914810/news/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/matches/match=fc-bayern-munchen-manchester-city-300295660/index.html
+70/90
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=germany-bundesliga-2000000019/standings/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=germany-bundesliga-2000000019/matches/match=borussia-dortmund-1-fc-koln-300283810/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=germany-bundesliga-2000000019/matches/calendar.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=germany-bundesliga-2000000019/news/newsid/251/299/0/index.html
+71/90
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=northern-ireland-premiership-2000000003/matches/calendar.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=south-africa-premiership-2000000053/standings/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=northern-ireland-premiership-2000000003/standings/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=northern-ireland-premiership-2000000003/index.html
+72/90
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=italy-lazio-1890313/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=italy-lazio-1890313/matches/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/photos/galleries/gallery/154/787/1/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=italy-lazio-1890313/news/index,page=4.htmx
+73/90
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=usa-mls-2000000103/standings/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=usa-mls-2000000103/news/newsid/229/403/2/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=usa-mls-2000000103/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=usa-mls-2000000103/news/newsid/229/276/4/index.html
+74/90
+
+Getting page: http://www.fifa.com/fifa-tournaments/classic-stadiums/stadium=33521/index.html
+
+
+Getting page: http://www.fifa.com/about-fifa/news/y=2013/m=5/news=ceremony-extolling-universal-values-2088952.html
+
+
+Getting page: http://www.fifa.com/sustainability/news/y=2004/m=7/news=football-building-bridges-and-saving-lives-93227.html
+
+
+Getting page: http://www.fifa.com/about-fifa/news/y=1999/m=5/news=giving-violence-70889.html
+75/90
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=italy-juventus-31085/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/photos/galleries/gallery/260/464/6/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=italy-serie-a-2000000026/news/newsid/267/911/7/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/news/newsid/249/597/7/index.html
+76/90
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=uruguay-liverpool-1896769/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=england-premier-league-2000000000/news/newsid/271/031/8/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=england-premier-league-2000000000/news/newsid/271/216/7/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=england-liverpool-27959/news/index,page=10.htmx
+77/90
+
+Getting page: http://www.fifa.com/fifa-world-ranking/index.html
+
+
+Getting page: http://www.fifa.com/fifa-tournaments/index.html
+80/90
+
+Getting page: http://www.fifa.com/confederationscup/news/y=2013/m=6/news=football-kobe-bryant-other-passion-2116449.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/news/newsid/107/253/4/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=japan-vissel-kobe-2147482127/index.html
+82/90
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=6/news=messi-shares-the-spotlight-as-fates-are-decided-2386160.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/news/newsid/269/601/4/index.html
+
+
+Getting page: http://es.fifa.com/world-match-centre/news/newsid/269/641/7/index.html
+
+
+Getting page: http://de.fifa.com/world-match-centre/news/newsid/269/578/5/index.html
+83/90
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=bermuda-premier-division-2000000158/matches/match=boulevard-blazers-devonshire-cougars-300335951/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=bermuda-boulevard-blazers-2147481424/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=bermuda-premier-division-2000000158/matches/match=boulevard-blazers-somerset-trojans-300335910/index.html
+
+
+Getting page: http://es.fifa.com/world-match-centre/nationalleagues/nationalleague=bermuda-premier-division-2000000158/matches/match=boulevard-blazers-somerset-trojans-300335910/index.html
+84/90
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=7/news=who-has-been-your-top-goalkeeper-2401216.html
+
+
+Getting page: http://www.fifa.com/associations/association=bra/news/index.html
+86/90
+
+Getting page: http://www.fifa.com/fifa-tournaments/players-coaches/people=387869/index.html
+
+
+Getting page: http://www.fifa.com/news/y=2015/m=3/news=wax-steel-and-the-eiffel-tower-2540966.html
+
+
+Getting page: http://es.fifa.com/fifa-tournaments/players-coaches/people=387869/index.html
+
+
+Getting page: http://www.fifa.com/mm/document/tournament/competition/01/46/59/29/44_0630_mex-pan_fulltime.pdf
+89/90
+
+Getting page: http://quality.fifa.com/en/Goal-Line-Technology/Get-to-know-goal-line-technology/Why-it-should-be-used/
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/refereeing/law%5f17%5fthe%5fcorner%5fkick%5fen%5f47358.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/affederation/ifab/02/00/08/29/finalifabagenda01022013.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/refereeing/law%5f11%5foffside%5fen%5f47383.pdf
+90/90
+
+Getting page: http://www.fifa.com/tournaments/archive/u17worldcup/mexico2011/news/newsid=1460401/index.html
+
+Creating Content Summary for:Sports
+1/24
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/standings/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/index.html
+
+
+Getting page: http://www.fifa.com/associations/uefa/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/news/index.html
+2/24
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=england-leeds-33744/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=england-leeds-33744/matches/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=england-leeds-33744/news/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=england-leeds-united-2000006865/matches/index.html
+3/24
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=germany-bayern-munchen-1914810/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/photos/galleries/gallery/232/592/1/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=germany-bayern-munchen-1914810/news/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/matches/match=fc-bayern-munchen-manchester-city-300295660/index.html
+4/24
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=germany-bundesliga-2000000019/standings/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=germany-bundesliga-2000000019/matches/match=borussia-dortmund-1-fc-koln-300283810/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=germany-bundesliga-2000000019/matches/calendar.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=germany-bundesliga-2000000019/news/newsid/251/299/0/index.html
+5/24
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=northern-ireland-premiership-2000000003/matches/calendar.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=south-africa-premiership-2000000053/standings/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=northern-ireland-premiership-2000000003/standings/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=northern-ireland-premiership-2000000003/index.html
+6/24
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=italy-lazio-1890313/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=italy-lazio-1890313/matches/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/photos/galleries/gallery/154/787/1/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=italy-lazio-1890313/news/index,page=4.htmx
+7/24
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=usa-mls-2000000103/standings/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=usa-mls-2000000103/news/newsid/229/403/2/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=usa-mls-2000000103/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=usa-mls-2000000103/news/newsid/229/276/4/index.html
+8/24
+
+Getting page: http://www.fifa.com/fifa-tournaments/classic-stadiums/stadium=33521/index.html
+
+
+Getting page: http://www.fifa.com/about-fifa/news/y=2013/m=5/news=ceremony-extolling-universal-values-2088952.html
+
+
+Getting page: http://www.fifa.com/sustainability/news/y=2004/m=7/news=football-building-bridges-and-saving-lives-93227.html
+
+
+Getting page: http://www.fifa.com/about-fifa/news/y=1999/m=5/news=giving-violence-70889.html
+9/24
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=italy-juventus-31085/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/uefachampionsleague/photos/galleries/gallery/260/464/6/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=italy-serie-a-2000000026/news/newsid/267/911/7/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/news/newsid/249/597/7/index.html
+10/24
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=uruguay-liverpool-1896769/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=england-premier-league-2000000000/news/newsid/271/031/8/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=england-premier-league-2000000000/news/newsid/271/216/7/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=england-liverpool-27959/news/index,page=10.htmx
+11/24
+
+Getting page: http://www.fifa.com/
+
+
+Getting page: http://www.fifa.com/worldcup/index.html
+
+
+Getting page: http://www.fifa.com/fifa-world-ranking/index.html
+
+
+Getting page: http://www.fifa.com/fifa-tournaments/index.html
+12/24
+
+Getting page: http://www.fifa.com/ballon-dor/news/y=2015/m=1/news=nowitzki-neuer-was-magnificent-in-brazil-2504304.html
+
+
+Getting page: http://www.fifa.com/ballon-dor/photos/galleries/y=2012/m=11/gallery=nba-players-talk-about-fifa-ballon-1928928.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=6/news=kobe-bryant-football-is-my-favourite-sport-2374985.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=6/news=select-your-dream-team-for-brazil-now-2386164.html
+13/24
+
+Getting page: http://www.fifa.com/worldcup/photos/galleries/y=2012/m=6/gallery=leandrinho-barbosa-brazilian-basketball-star-1654665.html
+
+
+Getting page: http://es.fifa.com/news/y=2015/m=3/news=promesas-propuestas-y-un-tipo-flexible-2580381.html
+
+
+Getting page: http://es.fifa.com/ballon-dor/photos/galleries/y=2012/m=11/gallery=nba-futbol-1928929.html
+14/24
+
+Getting page: http://www.fifa.com/confederationscup/news/y=2013/m=6/news=football-kobe-bryant-other-passion-2116449.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/news/newsid/107/253/4/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=japan-vissel-kobe-2147482127/index.html
+15/24
+
+Getting page: http://www.fifa.com/u20worldcup/photos/galleries/y=2011/m=8/gallery=the-tunnels-and-locker-rooms-1490441.html
+
+
+Getting page: http://es.fifa.com/world-match-centre/news/newsid/132/474/0/index.html
+16/24
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=6/news=messi-shares-the-spotlight-as-fates-are-decided-2386160.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/news/newsid/269/601/4/index.html
+
+
+Getting page: http://es.fifa.com/world-match-centre/news/newsid/269/641/7/index.html
+
+
+Getting page: http://de.fifa.com/world-match-centre/news/newsid/269/578/5/index.html
+17/24
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=bermuda-premier-division-2000000158/matches/match=boulevard-blazers-devonshire-cougars-300335951/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/clubs/club=bermuda-boulevard-blazers-2147481424/index.html
+
+
+Getting page: http://www.fifa.com/world-match-centre/nationalleagues/nationalleague=bermuda-premier-division-2000000158/matches/match=boulevard-blazers-somerset-trojans-300335910/index.html
+
+
+Getting page: http://es.fifa.com/world-match-centre/nationalleagues/nationalleague=bermuda-premier-division-2000000158/matches/match=boulevard-blazers-somerset-trojans-300335910/index.html
+18/24
+
+Getting page: http://www.fifa.com/development/news/y=2014/m=5/news=hospital-for-special-surgery-designated-fifa-medical-center-of-excelle-2341420.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=7/news=who-has-been-your-top-goalkeeper-2401216.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/y=2014/m=6/news=close-to-180-000-tickets-for-the-2014-fifa-world-cup-will-be-up-for-sa-2353399.html
+
+
+Getting page: http://www.fifa.com/associations/association=bra/news/index.html
+20/24
+
+Getting page: http://www.fifa.com/fifa-tournaments/players-coaches/people=387869/index.html
+
+
+Getting page: http://www.fifa.com/news/y=2015/m=3/news=wax-steel-and-the-eiffel-tower-2540966.html
+
+
+Getting page: http://es.fifa.com/fifa-tournaments/players-coaches/people=387869/index.html
+
+
+Getting page: http://www.fifa.com/mm/document/tournament/competition/01/46/59/29/44_0630_mex-pan_fulltime.pdf
+22/24
+
+Getting page: http://www.fifa.com/womensworldcup/news/y=2013/m=3/news=fifa-women-world-cup-canada-2015tm-match-schedule-unveiled-2035770.html
+
+
+Getting page: http://www.fifa.com/womens-football/news/y=2001/m=10/news=wusa-big-success-despite-small-audiences-79755.html
+
+
+Getting page: http://www.fifa.com/worldcup/teams/team=43921/_index_default.html
+
+
+Getting page: http://www.fifa.com/worldcup/news/index.html
+23/24
+
+Getting page: http://quality.fifa.com/en/Goal-Line-Technology/Get-to-know-goal-line-technology/Why-it-should-be-used/
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/refereeing/law%5f17%5fthe%5fcorner%5fkick%5fen%5f47358.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/affederation/ifab/02/00/08/29/finalifabagenda01022013.pdf
+
+
+Getting page: http://www.fifa.com/mm/document/afdeveloping/refereeing/law%5f11%5foffside%5fen%5f47383.pdf
+24/24
+
+Getting page: http://www.fifa.com/tournaments/archive/u17worldcup/mexico2011/news/newsid=1460401/index.html
