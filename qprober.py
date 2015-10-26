@@ -87,7 +87,6 @@ def process_root_list():
         for line in f:
             value = line.split(' ', 1)
             coverage[value[0]] += run_query(value[1].strip())
-        print coverage
         process_sub_list(coverage)
     #except IOError:
     #    print "List file not located. Processing will stop"
