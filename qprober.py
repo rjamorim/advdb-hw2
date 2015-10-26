@@ -6,13 +6,13 @@
 import urllib2
 import base64
 import json
+import subprocess
 from collections import defaultdict
 
 
 site = 'fifa.com'
 t_es = 0.6
 t_ec = 100
-category = 'Root'
 
 
 def run_query(query):
@@ -39,6 +39,7 @@ class DatabaseClassifier(object):
     def __init__(self):
         self.coverage = defaultdict(int)
         self.sum_coverage = 0
+        self.category = ['Root']
 
     def process_root_list(self):
         # try:
@@ -52,7 +53,7 @@ class DatabaseClassifier(object):
                 self.coverage[cat] += result_count
                 self.sum_coverage += result_count
                 for result in result_top4:
-                    output_text.write('root\t%i\t%s\n' % (i, result['Url']))
+                    output_text.write('Root\t%i\t%s\n' % (i, result['Url']))
                     output_text.flush()
                 i += 1
             self.process_sub_list()
@@ -61,7 +62,6 @@ class DatabaseClassifier(object):
         #    exit(1)
 
     def process_sub_list(self):
-        global category
         winner = ''
         max_coverage = 0
         for key in sorted(self.coverage.keys()):
@@ -77,7 +77,7 @@ class DatabaseClassifier(object):
         self.coverage = defaultdict(int)
         self.sum_coverage = 0
         if specificity > t_es and max_coverage > t_ec:
-            category += '/' + winner
+            self.category.append(winner)
             # try:
             with open(winner.lower() + '.txt') as f:
                 i = 1
@@ -98,7 +98,6 @@ class DatabaseClassifier(object):
             #    exit(1)
 
     def process_final_coverage(self, spec_parent):
-        global category
         winner = ''
         max_coverage = 0
         for key in sorted(self.coverage.keys()):
@@ -111,16 +110,22 @@ class DatabaseClassifier(object):
         # Normalization to calculate specificity
         specificity = (float(max_coverage) / self.sum_coverage) * spec_parent
         if specificity > t_es and max_coverage > t_ec:
-            category += '/' + winner
+            self.category.append(winner)
 
 
 class ContentSummarizer(object):
 
     def __init__(self):
-        self.url_list = defaultdict(set)
+        self.word_count = defaultdict(int)
+        self.word_count_sub = defaultdict(int)
+        self.url_list = defaultdict(list)
         self.url_read = defaultdict(int)
+        self.categories = ['Root', 'Sports', 'Soccer']
+        self.probe_count = defaultdict(int)
+        self.probe_count['Root'] = 66
+        self.probe_count['Sports'] = 24
 
-    def read_file(self, filename):
+    def load_file(self, filename):
         # Read stored file...
         with open(filename) as f:
             for line in f:
@@ -128,18 +133,92 @@ class ContentSummarizer(object):
                 cat = value[0]
                 i = value[1]
                 url = value[2]
-                if self.url_read[url] == 0:
-                    self.url_read[url] = 1
-                    self.url_list[(cat, i)].add(url)
+                self.url_list[(cat, i)].append(url)
+
+    def summary(self):
+        for category in self.categories[:2]:
+            print '\nCreating Content Summary for: ' + category
+            for count in range(1, self.probe_count[category] + 1):
+                listing = self.url_list[(category, str(count))]
+                if listing:
+                    print str(count) + '/' + str(self.probe_count[category])
+                    for url in listing:
+                        print '\tGetting page: ' + url
+                        self.process_text(url, category == 'Root')
+                # if self.url_read[url] == 0:
+                #    self.url_read[url] = 1
+        for word in sorted(self.word_count.keys()):
+            output_text_2.write('%s#%i\n' % (word, self.word_count[word]))
+            output_text_2.flush()
+            if self.word_count_sub[word] > 0:
+                output_text_3.write('%s#%i\n' % (word, self.word_count_sub[word]))
+                output_text_3.flush()
+
+    def process_text(self, url, root_flag):
+        p = subprocess.Popen('lynx '+ url + ' --dump', stdout=subprocess.PIPE, shell=True)
+        (output, err) = p.communicate()
+
+        reading = True
+        for line in output.split('\n'):
+            if line == 'References':
+                break
+            if line:
+                current = 0
+                if reading:
+                    while line.find('[', current) > 0:
+                        current = line.find('[', current)
+                        if line.find(']', current) > 0:
+                            c2 = line.find(']', current)
+                            line = line[:current] + line[c2 + 1:]
+                        else:
+                            line = line[:current]
+                            reading = False
+                else:
+                    if line.find(']', current) > 0:
+                        current = line.find(']', current)
+                        line = line[current + 1:]
+                        current = 0
+                        reading = True
+                        while line.find('[', current) > 0:
+                            current = line.find('[', current)
+                            if line.find(']', current) > 0:
+                                c2 = line.find(']', current)
+                                line = line[:current] + line[c2 + 1:]
+                            else:
+                                line = line[:current]
+                                reading = False
+                    else:
+                        line = ''
+
+                if line:
+                    new_line = ''
+                    for character in line:
+                        if character.isalpha():
+                            new_line += character.lower()
+                        else:
+                            new_line += ' '
+                    phrase = new_line.split()
+                    for word in phrase:
+                        self.word_count[word] += 1
+                        if root_flag == False:
+                            self.word_count_sub[word] += 1
 
 
 # print 'Classifying for website ' + site + '\n'
 # output_text = file('FIFA.txt', 'w')
 # db_classifier = DatabaseClassifier()
 # db_classifier.process_root_list()
-# print '\nClassification for ' + site + ': ' + category
+# print '\n\nClassification for ' + site + ': ' + '/'.join(db_classifier.category)
 
+
+output_text_2 = file('FIFA_summary.txt', 'w')
+output_text_3 = file('FIFA_summary_sub.txt', 'w')
+
+print '\n\n\nExtracting topic content summaries...'
 c_summarizer = ContentSummarizer()
-c_summarizer.read_file('FIFA.txt')
-for category, count in sorted(c_summarizer.url_list.keys()):
-    print category, count, len(c_summarizer.url_list[(category, count)]), c_summarizer.url_list[(category, count)]
+c_summarizer.load_file('FIFA.txt')
+c_summarizer.summary()
+
+# Problemas:
+# 1) Processar cada url somente uma vez, mesmo que ela apareca no top4 para mais de uma probe query.
+# Mas eh preciso garantir que a url vai ser considerada na contagem para a subcategoria tambem.
