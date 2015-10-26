@@ -8,11 +8,10 @@ import base64
 import json
 from collections import defaultdict
 
-site = "hardwarecentral.com"
+site = "fifa.com"
 t_es = 0.6
 t_ec = 100
 category = "Root"
-
 
 def run_query(query):
     # Execute query
@@ -42,10 +41,11 @@ def process_final_coverage(coverage, specificity_parent):
         if results > max_coverage:
             max_coverage = results
             winner = key
+    for key in coverage.keys():
+        print "Specificity for category " + str(key) + " is " + str((float(coverage[key]) / sum_coverage) * specificity_parent)
+        print "Coverage for category " + str(key) + " is " + str(coverage[key])
     # Normalization to calculate specificity
     specificity = (float(max_coverage) / sum_coverage) * specificity_parent
-    print specificity
-    print coverage
     if specificity > t_es and max_coverage > t_ec:
         category = category + "/" + winner
 
@@ -60,11 +60,13 @@ def process_sub_list(coverage):
         if results > max_coverage:
             max_coverage = results
             winner = key
+    for key in coverage.keys():
+        print "Specificity for category " + str(key) + " is " + str(float(coverage[key]) / sum_coverage)
+        print "Coverage for category " + str(key) + " is " + str(coverage[key])
     # Normalization to calculate specificity
     specificity = float(max_coverage) / sum_coverage
 
     coverage = defaultdict(int)
-    print specificity
     if specificity > t_es and max_coverage > t_ec:
         category = category + "/" + winner
         #try:
@@ -92,5 +94,6 @@ def process_root_list():
     #    exit(1)
 
 
+print "Classifying for website " + site + "\n"
 process_root_list()
-print site + ": " + category
+print "\nClassification for " + site + ": " + category
