@@ -8,16 +8,18 @@ import base64
 import json
 from collections import defaultdict
 
-site = "fifa.com"
+
+site = 'fifa.com'
 t_es = 0.6
 t_ec = 100
-category = "Root"
+category = 'Root'
+
 
 def run_query(query):
     # Execute query
-    # print "Query being executed: " + query
+    # print 'Query being executed: ' + query
     query_url = urllib2.quote("'site:" + site + " " + query + "'")
-    bing_url = 'https://api.datamarket.azure.com/Bing/SearchWeb/v1/Composite?Query=' + query_url + '&$top=10&$format=json'
+    bing_url = 'https://api.datamarket.azure.com/Bing/SearchWeb/v1/Composite?Query='+query_url+'&$top=4&$format=json'
     account_key = 'hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc'
     # account_key = bing
 
@@ -33,6 +35,7 @@ def run_query(query):
 
 def process_final_coverage(coverage, specificity_parent):
     global category
+    winner = ''
     max_coverage = 0
     sum_coverage = 0
     for key in coverage.keys():
@@ -42,16 +45,17 @@ def process_final_coverage(coverage, specificity_parent):
             max_coverage = results
             winner = key
     for key in coverage.keys():
-        print "Specificity for category " + str(key) + " is " + str((float(coverage[key]) / sum_coverage) * specificity_parent)
-        print "Coverage for category " + str(key) + " is " + str(coverage[key])
+        print 'Specificity for category ' + str(key) + ' is ' + str(specificity_parent * coverage[key] / sum_coverage)
+        print 'Coverage for category ' + str(key) + ' is ' + str(coverage[key])
     # Normalization to calculate specificity
     specificity = (float(max_coverage) / sum_coverage) * specificity_parent
     if specificity > t_es and max_coverage > t_ec:
-        category = category + "/" + winner
+        category += '/' + winner
 
 
 def process_sub_list(coverage):
     global category
+    winner = ''
     max_coverage = 0
     sum_coverage = 0
     for key in coverage.keys():
@@ -61,38 +65,38 @@ def process_sub_list(coverage):
             max_coverage = results
             winner = key
     for key in coverage.keys():
-        print "Specificity for category " + str(key) + " is " + str(float(coverage[key]) / sum_coverage)
-        print "Coverage for category " + str(key) + " is " + str(coverage[key])
+        print 'Specificity for category ' + str(key) + ' is ' + str(float(coverage[key]) / sum_coverage)
+        print 'Coverage for category ' + str(key) + ' is ' + str(coverage[key])
     # Normalization to calculate specificity
     specificity = float(max_coverage) / sum_coverage
 
     coverage = defaultdict(int)
     if specificity > t_es and max_coverage > t_ec:
-        category = category + "/" + winner
-        #try:
-        with open(winner.lower() + ".txt") as f:
+        category += '/' + winner
+        # try:
+        with open(winner.lower() + '.txt') as f:
             for line in f:
                 value = line.split(' ', 1)
                 coverage[value[0]] += run_query(value[1].strip())
             process_final_coverage(coverage, specificity)
-        #except IOError:
-        #    print "List file not located. Processing will stop"
+        # except IOError:
+        #    print 'List file not located. Processing will stop'
         #    exit(1)
 
 
 def process_root_list():
     coverage = defaultdict(int)
-    #try:
-    with open("root.txt") as f:
+    # try:
+    with open('root.txt') as f:
         for line in f:
             value = line.split(' ', 1)
             coverage[value[0]] += run_query(value[1].strip())
         process_sub_list(coverage)
-    #except IOError:
-    #    print "List file not located. Processing will stop"
+    # except IOError:
+    #    print 'List file not located. Processing will stop'
     #    exit(1)
 
 
-print "Classifying for website " + site + "\n"
+print 'Classifying for website ' + site + '\n'
 process_root_list()
-print "\nClassification for " + site + ": " + category
+print '\nClassification for ' + site + ': ' + category
