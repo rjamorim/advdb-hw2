@@ -136,7 +136,7 @@ class ContentSummarizer(object):
                 self.url_list[(cat, i)].append(url)
 
     def summary(self):
-        for category in self.categories[:2]:
+        for category in self.categories[1::-1]:
             print '\nCreating Content Summary for: ' + category
             for count in range(1, self.probe_count[category] + 1):
                 listing = self.url_list[(category, str(count))]
@@ -144,9 +144,9 @@ class ContentSummarizer(object):
                     print str(count) + '/' + str(self.probe_count[category])
                     for url in listing:
                         print '\tGetting page: ' + url
-                        self.process_text(url, category == 'Root')
-                # if self.url_read[url] == 0:
-                #    self.url_read[url] = 1
+                        if self.url_read[url] == 0:
+                            self.url_read[url] = 1
+                            self.process_text(url, category == 'Root')
         for word in sorted(self.word_count.keys()):
             output_text_2.write('%s#%i\n' % (word, self.word_count[word]))
             output_text_2.flush()
@@ -155,7 +155,7 @@ class ContentSummarizer(object):
                 output_text_3.flush()
 
     def process_text(self, url, root_flag):
-        p = subprocess.Popen('lynx '+ url + ' --dump', stdout=subprocess.PIPE, shell=True)
+        p = subprocess.Popen('lynx ' + url + ' --dump', stdout=subprocess.PIPE, shell=True)
         (output, err) = p.communicate()
 
         reading = True
@@ -200,7 +200,7 @@ class ContentSummarizer(object):
                     phrase = new_line.split()
                     for word in phrase:
                         self.word_count[word] += 1
-                        if root_flag == False:
+                        if root_flag is False:
                             self.word_count_sub[word] += 1
 
 
@@ -209,7 +209,6 @@ class ContentSummarizer(object):
 # db_classifier = DatabaseClassifier()
 # db_classifier.process_root_list()
 # print '\n\nClassification for ' + site + ': ' + '/'.join(db_classifier.category)
-
 
 output_text_2 = file('FIFA_summary.txt', 'w')
 output_text_3 = file('FIFA_summary_sub.txt', 'w')
