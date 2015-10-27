@@ -1,0 +1,42 @@
+Yahoo:
+
+1)
+Getting page: https://developer.yahoo.com/ypatterns/navigation/tabs/moduletabs.html
+
+Looking up pipes.yahoo.com
+Unable to locate remote host pipes.yahoo.com.
+Alert!: Unable to connect to remote host.
+
+lynx: Can't access startfile http://pipes.yahoo.com/pipes/docs?doc=deprecated
+
+2)
+Getting page: https://www.yahoo.com/tech/s/pc-strong-enough-run-windows-10-194225415.html
+Looking up messenger.yahoo.com
+Making HTTP connection to messenger.yahoo.com
+Sending HTTP request.
+HTTP request sent; waiting for response.
+HTTP/1.1 302 Found
+Data transfer complete
+HTTP/1.1 302 Found
+Using https://messenger.yahoo.com/win
+Looking up messenger.yahoo.com
+Making HTTPS connection to messenger.yahoo.com
+SSL callback:unable to get local issuer certificate, preverify_ok=0, ssl_okay=0
+Retrying connection without TLS.
+Looking up messenger.yahoo.com
+Making HTTPS connection to messenger.yahoo.com
+SSL callback:unable to get local issuer certificate, preverify_ok=0, ssl_okay=0
+Alert!: Unable to make secure connection to remote host.
+
+lynx: Can't access startfile http://messenger.yahoo.com/win
+
+3)
+Getting page: http://sports.yahoo.com/mlb/stats/bycategory?cat=Batting&conference=NL&sort=22
+/bin/sh: --dump: command not found
+
+
+Diabetes
+
+1)
+Getting page: http://main.diabetes.org/site/Calendar/1543163310?view=Detail&id=24381
+/bin/sh: --dump: command not found
