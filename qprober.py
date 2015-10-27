@@ -128,7 +128,10 @@ class ContentSummarizer(object):
         self.url_list = defaultdict(list)
         self.url_read = defaultdict(int)
         self.categories = []
+        self.categories = ['Root', 'Health']  # Initialization using file
         self.probe_count = defaultdict(int)
+        self.probe_count['Root'] = 66  # Initialization using file
+        self.probe_count['Health'] = 29  # Initialization using file
 
     def load_classifier(self, classifier):
         # Load information form classifier..
@@ -166,7 +169,7 @@ class ContentSummarizer(object):
                 output_text_3.flush()
 
     def process_text(self, url, root_flag):
-        p = subprocess.Popen('lynx ' + url + ' --dump', stdout=subprocess.PIPE, shell=True)
+        p = subprocess.Popen("lynx '" + url + "' --dump", stdout=subprocess.PIPE, shell=True)
         (output, err) = p.communicate()
 
         reading = True
@@ -215,16 +218,16 @@ class ContentSummarizer(object):
                             self.word_count_sub[word] += 1
 
 
-print 'Classifying for website ' + site + '\n'
-output_text = file(name + '.txt', 'w')
-db_classifier = DatabaseClassifier()
-db_classifier.process_root_list()
-print '\n\nClassification for ' + site + ': ' + '/'.join(db_classifier.category)
+# print 'Classifying for website ' + site + '\n'
+# output_text = file(name + '.txt', 'w')
+# db_classifier = DatabaseClassifier()
+# db_classifier.process_root_list()
+# print '\n\nClassification for ' + site + ': ' + '/'.join(db_classifier.category)
 
 print '\n\n\nExtracting topic content summaries...'
 output_text_2 = file(name + '_summary.txt', 'w')
 output_text_3 = file(name + '_summary_sub.txt', 'w')
 c_summarizer = ContentSummarizer()
-# c_summarizer.load_file(name + '.txt')
-c_summarizer.load_classifier(db_classifier)
+c_summarizer.load_file(name + '.txt')
+# c_summarizer.load_classifier(db_classifier)
 c_summarizer.summary()
