@@ -142,7 +142,7 @@ class ContentSummarizer(object):
             for line in f:
                 value = line.strip().split('\t')
                 cat = value[0]
-                i = value[1]
+                i = int(value[1])
                 url = value[2]
                 self.url_list[(cat, i)].append(url)
 
