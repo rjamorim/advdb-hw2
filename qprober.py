@@ -10,15 +10,14 @@ import subprocess
 from collections import defaultdict
 
 bing = 'hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc'
-name = 'yahoo'
-site = name + '.com'
 t_es = 0.6
 t_ec = 100
+site = 'yahoo.com'
 
-#bing = argv[1]
-#t_es = argv[2]
-#t_ec = argv[3]
-#site = argv[4]
+# bing = argv[1]
+# t_es = argv[2]
+# t_ec = argv[3]
+# site = argv[4]
 
 
 def run_query(query):
@@ -224,15 +223,15 @@ class ContentSummarizer(object):
 
 
 # print 'Classifying for website ' + site + '\n'
-# output_text = file(name + '.txt', 'w')
+# output_text = file(site + '.txt', 'w')
 # db_classifier = DatabaseClassifier()
 # db_classifier.process_root_list()
 # print '\n\nClassification for ' + site + ': ' + '/'.join(db_classifier.category)
 
 print '\n\n\nExtracting topic content summaries...'
-output_text_2 = file(name + '_summary.txt', 'w')
-output_text_3 = file(name + '_summary_sub.txt', 'w')
+output_text_2 = file(site + '_summary.txt', 'w')
+output_text_3 = file(site + '_summary_sub.txt', 'w')
 c_summarizer = ContentSummarizer()
-c_summarizer.load_file(name + '.txt')
+c_summarizer.load_file(site + '.txt')
 # c_summarizer.load_classifier(db_classifier)
 c_summarizer.summary()
