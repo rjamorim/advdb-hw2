@@ -9,10 +9,16 @@ import json
 import subprocess
 from collections import defaultdict
 
+bing = 'hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc'
 name = 'yahoo'
 site = name + '.com'
 t_es = 0.6
 t_ec = 100
+
+#bing = argv[1]
+#t_es = argv[2]
+#t_ec = argv[3]
+#site = argv[4]
 
 
 def run_query(query):
@@ -20,8 +26,7 @@ def run_query(query):
     # print 'Query being executed: ' + query + ' (' + site
     query_url = urllib2.quote("'site:" + site + " " + query + "'")
     bing_url = 'https://api.datamarket.azure.com/Bing/SearchWeb/v1/Composite?Query='+query_url+'&$top=4&$format=json'
-    account_key = 'hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc'
-    # account_key = bing
+    account_key = bing
 
     account_key_enc = base64.b64encode(account_key + ':' + account_key)
     headers = {'Authorization': 'Basic ' + account_key_enc}
