@@ -1,3 +1,5 @@
+# encoding=utf8
+
 # Web Database Classification - hw2
 # Advanced Database Systems
 # Pedro Ferro Freitas - pff2108
@@ -10,7 +12,7 @@ import subprocess
 from collections import defaultdict
 
 bing = 'hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc'
-t_es = 0.6
+t_es = 0.3
 t_ec = 100
 site = 'yahoo.com'
 
@@ -41,8 +43,12 @@ def run_query(query):
 class DatabaseClassifier(object):
 
     def __init__(self):
+        self.sum_coverage = defaultdict(int)
         self.coverage = defaultdict(int)
-        self.sum_coverage = 0
+        self.specificity = defaultdict(int)
+        self.sum_coverage_sub = defaultdict(int)
+        self.coverage_sub = defaultdict(int)
+        self.specificity_sub = defaultdict(int)
         self.category = ['Root']
         self.probe_count = defaultdict(int)
         self.url_list = defaultdict(list)
@@ -59,69 +65,79 @@ class DatabaseClassifier(object):
                 result_top4, result_count = run_query(current_query)
                 self.probe_count[winner] += 1
                 self.coverage[cat] += result_count
-                self.sum_coverage += result_count
+                self.sum_coverage[winner] += result_count
                 for result in result_top4:
-                    output_text.write('Root\t%i\t%s\n' % (i, result['Url']))
-                    output_text.flush()
-                    self.url_list[(winner, i)].append(result['Url'])
+                    # output_text.write('Root\t%i\t%s\n' % (i, result['Url'].encode('utf-8')))
+                    # output_text.flush()
+                    self.url_list[(winner, i)].append(result['Url'].encode('utf-8'))
                 i += 1
-            self.process_sub_list()
+            sub_winner = self.process_sub_list(winner)
         # except IOError:
         #    print 'List file not located. Processing will stop'
         #    exit(1)
+        winner = (winner, sub_winner)
+        self.category = winner
 
-    def process_sub_list(self):
-        winner = ''
-        max_coverage = 0
+    def process_sub_list(self, parent):
+        winner = []
         for key in sorted(self.coverage.keys()):
-            result_count = self.coverage[key]
-            print 'Specificity for category ' + str(key) + ' is ' + str(float(result_count) / self.sum_coverage)
-            print 'Coverage for category ' + str(key) + ' is ' + str(result_count)
-            if result_count > max_coverage:
-                max_coverage = result_count
-                winner = key
-        # Normalization to calculate specificity
-        specificity = float(max_coverage) / self.sum_coverage
+            result_coverage = self.coverage[key]
+            # Normalization to calculate specificity
+            result_specificity = float(result_coverage) / self.sum_coverage[parent]
+            self.specificity[key] = result_specificity
+            print 'Specificity for category ' + str(key) + ' is ' + str(result_specificity)
+            print 'Coverage for category ' + str(key) + ' is ' + str(result_coverage)
+            if result_specificity > t_es and result_coverage > t_ec:
+                self.sum_coverage_sub = defaultdict(int)
+                self.coverage_sub = defaultdict(int)
+                self.specificity_sub = defaultdict(int)
+                # try:
+                with open(key.lower() + '.txt') as f:
+                    i = 1
+                    for line in f:
+                        value = line.split(' ', 1)
+                        cat = value[0]
+                        current_query = value[1].strip()
+                        result_top4, result_count = run_query(current_query)
+                        self.probe_count[key] += 1
+                        self.coverage_sub[cat] += result_count
+                        self.sum_coverage_sub[key] += result_count
+                        for result in result_top4:
+                            # output_text.write('%s\t%i\t%s\n' % (key, i, result['Url'].encode('utf-8')))
+                            # output_text.flush()
+                            self.url_list[(key, i)].append(result['Url'].encode('utf-8'))
+                        i += 1
+                    sub_key = self.process_final_coverage(key)
+                # except IOError:
+                #    print 'List file not located. Processing will stop'
+                #    exit(1)
+                key = (key, sub_key)
+                winner.append(key)
+        return winner
 
-        self.coverage = defaultdict(int)
-        self.sum_coverage = 0
-        if specificity > t_es and max_coverage > t_ec:
-            self.category.append(winner)
-            # try:
-            with open(winner.lower() + '.txt') as f:
-                i = 1
-                for line in f:
-                    value = line.split(' ', 1)
-                    cat = value[0]
-                    current_query = value[1].strip()
-                    result_top4, result_count = run_query(current_query)
-                    self.probe_count[winner] += 1
-                    self.coverage[cat] += result_count
-                    self.sum_coverage += result_count
-                    for result in result_top4:
-                        output_text.write('%s\t%i\t%s\n' % (winner, i, result['Url']))
-                        output_text.flush()
-                        self.url_list[(winner, i)].append(result['Url'])
-                    i += 1
-                self.process_final_coverage(specificity)
-            # except IOError:
-            #    print 'List file not located. Processing will stop'
-            #    exit(1)
+    def process_final_coverage(self, parent):
+        winner = []
+        for key in sorted(self.coverage_sub.keys()):
+            result_coverage = self.coverage_sub[key]
+            # Normalization to calculate specificity
+            result_specificity = self.specificity[parent] * result_coverage / self.sum_coverage_sub[parent]
+            self.specificity_sub[key] = result_specificity
+            print 'Specificity for category ' + str(key) + ' is ' + str(result_specificity)
+            print 'Coverage for category ' + str(key) + ' is ' + str(result_coverage)
+            if result_specificity > t_es and result_coverage > t_ec:
+                winner.append(key)
+        return winner
 
-    def process_final_coverage(self, spec_parent):
-        winner = ''
-        max_coverage = 0
-        for key in sorted(self.coverage.keys()):
-            result_count = self.coverage[key]
-            print 'Specificity for category ' + str(key) + ' is ' + str(spec_parent * result_count / self.sum_coverage)
-            print 'Coverage for category ' + str(key) + ' is ' + str(result_count)
-            if result_count > max_coverage:
-                max_coverage = result_count
-                winner = key
-        # Normalization to calculate specificity
-        specificity = (float(max_coverage) / self.sum_coverage) * spec_parent
-        if specificity > t_es and max_coverage > t_ec:
-            self.category.append(winner)
+    def print_categories(self):
+        if len(self.category[1]) > 0:
+            for name1 in self.category[1]:
+                if len(name1[1]) > 0:
+                    for name2 in name1[1]:
+                        print self.category[0] + '/' + name1[0] + '/' + name2
+                else:
+                    print self.category[0] + '/' + name1[0]
+        else:
+            print self.category[0]
 
 
 class ContentSummarizer(object):
@@ -132,13 +148,17 @@ class ContentSummarizer(object):
         self.url_list = defaultdict(list)
         self.url_read = defaultdict(int)
         self.categories = []
-        self.categories = ['Root', 'Health']  # Initialization using file
+        # self.categories = ('Root', [])  # Initialization using file
+        # self.categories = ('Root', [('Health', []), ('Sports', [])])  # Initialization using file
+        self.categories = ('Root', [('Computers', ['Programming']), ('Health', ['Diseases', 'Fitness']), ('Sports', ['Basketball', 'Soccer'])])  # Initialization using file
         self.probe_count = defaultdict(int)
         self.probe_count['Root'] = 66  # Initialization using file
+        self.probe_count['Computers'] = 30  # Initialization using file
         self.probe_count['Health'] = 29  # Initialization using file
+        self.probe_count['Sports'] = 24  # Initialization using file
 
     def load_classifier(self, classifier):
-        # Load information form classifier..
+        # Load relevant information form classifier to content summarizer
         self.probe_count = classifier.probe_count
         self.categories = classifier.category
         self.url_list = classifier.url_list
@@ -154,8 +174,10 @@ class ContentSummarizer(object):
                 self.url_list[(cat, i)].append(url)
 
     def summary(self):
-        for category in self.categories[1::-1]:
+        for entry in self.categories[1]:
+            category = entry[0]
             print '\nCreating Content Summary for: ' + category
+            self.word_count_sub = defaultdict(int)
             for count in range(1, self.probe_count[category] + 1):
                 listing = self.url_list[(category, count)]
                 if listing:
@@ -165,12 +187,28 @@ class ContentSummarizer(object):
                         if self.url_read[url] == 0:
                             self.url_read[url] = 1
                             self.process_text(url, category == 'Root')
+            output_text_3 = file(category + '-' + site + '.txt', 'w')
+            for word in sorted(self.word_count_sub.keys()):
+                output_text_3.write('%s#%i\n' % (word, self.word_count_sub[word]))
+                output_text_3.flush()
+            output_text_3.close()
+
+        category = self.categories[0]
+        print '\nCreating Content Summary for: ' + category
+        for count in range(1, self.probe_count[category] + 1):
+            listing = self.url_list[(category, count)]
+            if listing:
+                print str(count) + '/' + str(self.probe_count[category])
+                for url in listing:
+                    print '\tGetting page: ' + url
+                    if self.url_read[url] == 0:
+                        self.url_read[url] = 1
+                        self.process_text(url, category == 'Root')
+        output_text_2 = file('Root' + '-' + site + '.txt', 'w')
         for word in sorted(self.word_count.keys()):
             output_text_2.write('%s#%i\n' % (word, self.word_count[word]))
             output_text_2.flush()
-            if self.word_count_sub[word] > 0:
-                output_text_3.write('%s#%i\n' % (word, self.word_count_sub[word]))
-                output_text_3.flush()
+        output_text_2.close()
 
     def process_text(self, url, root_flag):
         p = subprocess.Popen("lynx '" + url + "' --dump", stdout=subprocess.PIPE, shell=True)
@@ -226,11 +264,10 @@ class ContentSummarizer(object):
 # output_text = file(site + '.txt', 'w')
 # db_classifier = DatabaseClassifier()
 # db_classifier.process_root_list()
-# print '\n\nClassification for ' + site + ': ' + '/'.join(db_classifier.category)
+# print '\n\nClassification for ' + site + ': '
+# db_classifier.print_categories()
 
 print '\n\n\nExtracting topic content summaries...'
-output_text_2 = file(site + '_summary.txt', 'w')
-output_text_3 = file(site + '_summary_sub.txt', 'w')
 c_summarizer = ContentSummarizer()
 c_summarizer.load_file(site + '.txt')
 # c_summarizer.load_classifier(db_classifier)
