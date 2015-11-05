@@ -11,15 +11,15 @@ import json
 import subprocess
 from collections import defaultdict
 
-bing = 'hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc'
-t_es = 0.3
-t_ec = 100
-site = 'hardwarecentral.com'
+# bing = 'hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc'
+# t_es = 0.6
+# t_ec = 100
+# site = 'hardwarecentral.com'
 
-# bing = argv[1]
-# t_es = argv[2]
-# t_ec = argv[3]
-# site = argv[4]
+bing = argv[1]
+t_es = argv[2]
+t_ec = argv[3]
+site = argv[4]
 
 
 def run_query(query):
