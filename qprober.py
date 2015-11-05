@@ -12,9 +12,9 @@ import subprocess
 from collections import defaultdict
 
 bing = 'hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc'
-t_es = 0.6
+t_es = 0.3
 t_ec = 100
-site = 'yahoo.com'
+site = 'hardwarecentral.com'
 
 # bing = argv[1]
 # t_es = argv[2]
@@ -53,6 +53,7 @@ class DatabaseClassifier(object):
         self.url_list = defaultdict(list)
 
     def process_root_list(self):
+        # Performs Bing searches for all keywords in the root file
         winner = 'Root'
         with open(winner.lower() + '.txt') as f:
             i = 1
@@ -65,6 +66,7 @@ class DatabaseClassifier(object):
                 self.coverage[cat] += result_count
                 self.sum_coverage[winner] += result_count
                 for result in result_top4:
+                    # This stores the top four results for each query to later extract the summaries
                     self.url_list[(winner, i)].append(result['Url'].encode('utf-8'))
                 i += 1
             sub_winner = self.process_sub_list(winner)
@@ -72,6 +74,7 @@ class DatabaseClassifier(object):
         self.category = winner
 
     def process_sub_list(self, parent):
+        # Performs Bing searches for all keywords in the category(ies) most significant in the previous searches
         winner = []
         for key in sorted(self.coverage.keys()):
             result_coverage = self.coverage[key]
@@ -81,6 +84,7 @@ class DatabaseClassifier(object):
             print 'Specificity for category ' + str(key) + ' is ' + str(result_specificity)
             print 'Coverage for category ' + str(key) + ' is ' + str(result_coverage)
             if result_specificity > t_es and result_coverage > t_ec:
+                # If specificity and coverage are larger than thresholds, we run the queries for that subcategory
                 self.sum_coverage_sub = defaultdict(int)
                 self.coverage_sub = defaultdict(int)
                 self.specificity_sub = defaultdict(int)
@@ -95,14 +99,16 @@ class DatabaseClassifier(object):
                         self.coverage_sub[cat] += result_count
                         self.sum_coverage_sub[key] += result_count
                         for result in result_top4:
+                            # This stores the top four results for each query to later extract the summaries
                             self.url_list[(key, i)].append(result['Url'].encode('utf-8'))
                         i += 1
-                    sub_key = self.process_final_coverage(key)
+                    sub_key = self.process_final_specificity(key)
                 key = (key, sub_key)
                 winner.append(key)
         return winner
 
-    def process_final_coverage(self, parent):
+    def process_final_specificity(self, parent):
+        # Calculates the specificity for the leaf categories
         winner = []
         for key in sorted(self.coverage_sub.keys()):
             result_coverage = self.coverage_sub[key]
@@ -112,10 +118,12 @@ class DatabaseClassifier(object):
             print 'Specificity for category ' + str(key) + ' is ' + str(result_specificity)
             print 'Coverage for category ' + str(key) + ' is ' + str(result_coverage)
             if result_specificity > t_es and result_coverage > t_ec:
+                # If specificity and coverage are larger than thresholds, that leaf category is chosen for the database
                 winner.append(key)
         return winner
 
     def print_categories(self):
+        # Prints the detected category(ies) for each database
         if len(self.category[1]) > 0:
             for name1 in self.category[1]:
                 if len(name1[1]) > 0:
@@ -143,63 +151,64 @@ class ContentSummarizer(object):
         self.categories = classifier.category
         self.url_list = classifier.url_list
 
-    def load_file(self, filename):
-        # Read stored file..
-        with open(filename) as f:
-            for line in f:
-                value = line.strip().split('\t')
-                cat = value[0]
-                i = int(value[1])
-                url = value[2]
-                self.url_list[(cat, i)].append(url)
-
     def summary(self):
+        # This first part extracts summaries for the categories
         for entry in self.categories[1]:
             category = entry[0]
             print '\nCreating Content Summary for: ' + category
             self.word_count_sub = defaultdict(int)
             for count in range(1, self.probe_count[category] + 1):
+                # Get the URL list of the top 4 resulta in each probe query
                 listing = self.url_list[(category, count)]
                 if listing:
                     print str(count) + '/' + str(self.probe_count[category])
                     for url in listing:
+                        # For each URL, extract all text from the page
                         print '\tGetting page: ' + url
                         if self.url_read[url] == 0:
-                            self.url_read[url] = 1
                             self.process_text(url, category == 'Root')
+                            self.url_read[url] = 1
             output_text_3 = file(category + '-' + site + '.txt', 'w')
             for word in sorted(self.word_count_sub.keys()):
+                # Outputs the file as instructed in the assignment
                 output_text_3.write('%s#%i\n' % (word, self.word_count_sub[word]))
                 output_text_3.flush()
             output_text_3.close()
 
+        # This second part extracts summaries for the root part
         category = self.categories[0]
         print '\nCreating Content Summary for: ' + category
         for count in range(1, self.probe_count[category] + 1):
+            # Get the URL list of the top 4 resulta in each probe query
             listing = self.url_list[(category, count)]
             if listing:
                 print str(count) + '/' + str(self.probe_count[category])
                 for url in listing:
+                    # For each URL, extract all text from the page
                     print '\tGetting page: ' + url
                     if self.url_read[url] == 0:
-                        self.url_read[url] = 1
                         self.process_text(url, category == 'Root')
+                        self.url_read[url] = 1
         output_text_2 = file('Root' + '-' + site + '.txt', 'w')
         for word in sorted(self.word_count.keys()):
+            # Outputs the file as instructed in the assignment
             output_text_2.write('%s#%i\n' % (word, self.word_count[word]))
             output_text_2.flush()
         output_text_2.close()
 
     def process_text(self, url, root_flag):
+        # lynx is used to extract text from HTML files, as instructed in the assignment
         p = subprocess.Popen("lynx '" + url + "' --dump", stdout=subprocess.PIPE, shell=True)
         (output, err) = p.communicate()
 
         reading = True
         for line in output.split('\n'):
             if line == 'References':
+                # The References keywork means that the whole textual content has been processed already
                 break
             if line:
                 current = 0
+                # This whole routine is meant to discard all information surrounded by brackets
                 if reading:
                     while line.find('[', current) > 0:
                         current = line.find('[', current)
@@ -225,7 +234,7 @@ class ContentSummarizer(object):
                                 reading = False
                     else:
                         line = ''
-
+                # Non-alphabetic characters are considered word separators
                 if line:
                     new_line = ''
                     for character in line:
@@ -235,18 +244,20 @@ class ContentSummarizer(object):
                             new_line += ' '
                     phrase = new_line.split()
                     for word in phrase:
+                    # The routine that counts word frequencies
                         self.word_count[word] += 1
                         if root_flag is False:
                             self.word_count_sub[word] += 1
 
-
+# Call the methods for database classification
 print 'Classifying for website ' + site + '\n'
 db_classifier = DatabaseClassifier()
 db_classifier.process_root_list()
 print '\n\nClassification for ' + site + ': '
 db_classifier.print_categories()
 
-print '\n\n\nExtracting topic content summaries...'
+# Call the methods for summary creation
+print '\n\nExtracting topic content summaries...'
 c_summarizer = ContentSummarizer()
 c_summarizer.load_classifier(db_classifier)
 c_summarizer.summary()
