@@ -12,7 +12,7 @@ import subprocess
 from collections import defaultdict
 
 bing = 'hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc'
-t_es = 0.3
+t_es = 0.6
 t_ec = 100
 site = 'yahoo.com'
 
@@ -24,7 +24,6 @@ site = 'yahoo.com'
 
 def run_query(query):
     # Execute query
-    # print 'Query being executed: ' + query + ' (' + site
     query_url = urllib2.quote("'site:" + site + " " + query + "'")
     bing_url = 'https://api.datamarket.azure.com/Bing/SearchWeb/v1/Composite?Query='+query_url+'&$top=4&$format=json'
     account_key = bing
@@ -55,7 +54,6 @@ class DatabaseClassifier(object):
 
     def process_root_list(self):
         winner = 'Root'
-        # try:
         with open(winner.lower() + '.txt') as f:
             i = 1
             for line in f:
@@ -67,14 +65,9 @@ class DatabaseClassifier(object):
                 self.coverage[cat] += result_count
                 self.sum_coverage[winner] += result_count
                 for result in result_top4:
-                    # output_text.write('Root\t%i\t%s\n' % (i, result['Url'].encode('utf-8')))
-                    # output_text.flush()
                     self.url_list[(winner, i)].append(result['Url'].encode('utf-8'))
                 i += 1
             sub_winner = self.process_sub_list(winner)
-        # except IOError:
-        #    print 'List file not located. Processing will stop'
-        #    exit(1)
         winner = (winner, sub_winner)
         self.category = winner
 
@@ -91,7 +84,6 @@ class DatabaseClassifier(object):
                 self.sum_coverage_sub = defaultdict(int)
                 self.coverage_sub = defaultdict(int)
                 self.specificity_sub = defaultdict(int)
-                # try:
                 with open(key.lower() + '.txt') as f:
                     i = 1
                     for line in f:
@@ -103,14 +95,9 @@ class DatabaseClassifier(object):
                         self.coverage_sub[cat] += result_count
                         self.sum_coverage_sub[key] += result_count
                         for result in result_top4:
-                            # output_text.write('%s\t%i\t%s\n' % (key, i, result['Url'].encode('utf-8')))
-                            # output_text.flush()
                             self.url_list[(key, i)].append(result['Url'].encode('utf-8'))
                         i += 1
                     sub_key = self.process_final_coverage(key)
-                # except IOError:
-                #    print 'List file not located. Processing will stop'
-                #    exit(1)
                 key = (key, sub_key)
                 winner.append(key)
         return winner
@@ -148,14 +135,7 @@ class ContentSummarizer(object):
         self.url_list = defaultdict(list)
         self.url_read = defaultdict(int)
         self.categories = []
-        # self.categories = ('Root', [])  # Initialization using file
-        # self.categories = ('Root', [('Health', []), ('Sports', [])])  # Initialization using file
-        self.categories = ('Root', [('Computers', ['Programming']), ('Health', ['Diseases', 'Fitness']), ('Sports', ['Basketball', 'Soccer'])])  # Initialization using file
         self.probe_count = defaultdict(int)
-        self.probe_count['Root'] = 66  # Initialization using file
-        self.probe_count['Computers'] = 30  # Initialization using file
-        self.probe_count['Health'] = 29  # Initialization using file
-        self.probe_count['Sports'] = 24  # Initialization using file
 
     def load_classifier(self, classifier):
         # Load relevant information form classifier to content summarizer
@@ -260,15 +240,13 @@ class ContentSummarizer(object):
                             self.word_count_sub[word] += 1
 
 
-# print 'Classifying for website ' + site + '\n'
-# output_text = file(site + '.txt', 'w')
-# db_classifier = DatabaseClassifier()
-# db_classifier.process_root_list()
-# print '\n\nClassification for ' + site + ': '
-# db_classifier.print_categories()
+print 'Classifying for website ' + site + '\n'
+db_classifier = DatabaseClassifier()
+db_classifier.process_root_list()
+print '\n\nClassification for ' + site + ': '
+db_classifier.print_categories()
 
 print '\n\n\nExtracting topic content summaries...'
 c_summarizer = ContentSummarizer()
-c_summarizer.load_file(site + '.txt')
-# c_summarizer.load_classifier(db_classifier)
+c_summarizer.load_classifier(db_classifier)
 c_summarizer.summary()
