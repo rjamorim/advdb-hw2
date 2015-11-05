@@ -10,6 +10,7 @@ import base64
 import json
 import subprocess
 from collections import defaultdict
+from sys import argv
 
 # bing = 'hTvGEgXTQ8lDLYr8nnHocn7n9GSwF5antgnogEhNDTc'
 # t_es = 0.6
