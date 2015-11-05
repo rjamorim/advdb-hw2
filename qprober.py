@@ -18,10 +18,9 @@ from sys import argv
 # site = 'hardwarecentral.com'
 
 bing = argv[1]
-t_es = argv[2]
-t_ec = argv[3]
+t_es = float(argv[2])
+t_ec = int(argv[3])
 site = argv[4]
-
 
 def run_query(query):
     # Execute query
